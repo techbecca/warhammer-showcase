@@ -1,0 +1,48 @@
+header, header div, article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul li {
+  padding: 2rem;
+}
+
+header {
+  border-bottom: 1px solid gray;
+}
+
+.header {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+article.preview {
+  max-width: 50rem;
+  height: 25rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+article.preview img {
+  margin: 2rem;
+  max-width: 20rem;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid gray;
+  height: 10rem;
+  padding: 2rem;
+}
