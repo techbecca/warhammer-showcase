@@ -1,6 +1,8 @@
 body {
-  Font-Family: 'Fauna One', Serif;
+  Font-Family: Montserrat, Sans-serif;
   Font-Size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
 }
 
 h1 {
@@ -12,13 +14,14 @@ h1 {
 
 header, header div, article {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-sizing: border-box;
+  align-items: center;
 }
 
-header p {
+header {
   Font-Family: 'Cinzel', Cursive;
+  font-size: 1.15rem;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -51,8 +54,15 @@ article.preview img {
   max-width: 15rem;
 }
 
+img.logo-small {
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
 footer {
   text-align: center;
   border-top: 1px solid gray;
   padding: 2rem;
+  justify-content: space-around;
+  line-height: 1.1
 }
