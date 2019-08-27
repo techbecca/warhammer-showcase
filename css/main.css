@@ -36,30 +36,23 @@ header {
 }
 
 .header {
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding-top: 3rem;
+  margin: 1rem;
 }
 
 article.preview {
   max-width: 50rem;
   height: 25rem;
   padding: 2rem;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 article.preview img {
   margin: 2rem;
-  max-width: 20rem;
+  max-width: 15rem;
 }
 
 footer {
   text-align: center;
   border-top: 1px solid gray;
-  height: 10rem;
   padding: 2rem;
 }
