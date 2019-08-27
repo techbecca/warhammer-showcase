@@ -1,15 +1,27 @@
+html {
+  font-size: 14px;
+}
+
 body {
-  Font-Family: Montserrat, Sans-serif;
+  Font-Family: Raleway, Sans-serif;
   Font-Size: 14px;
-  letter-spacing: 0.1em;
   line-height: 1.4;
 }
 
-h1 {
-  Font-Family: 'Cinzel', Cursive;
-  Font-Size: 44px;
+h1, h2, h3, h4, h5, h6 {
+  Font-Family: 'Cinzel', serif;
+  letter-spacing: 0.1em;
+}
+
+h1.title {
+  Font-Family: 'Cinzel', serif;
+  Font-Size: 4rem;
   text-align: center;
-  padding-top: 3rem;
+  padding: 5rem 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 header, header div, article {
@@ -19,9 +31,16 @@ header, header div, article {
 }
 
 header {
-  Font-Family: 'Cinzel', Cursive;
-  font-size: 1.15rem;
+  Font-Family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
   justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid gray;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background: white;
 }
 
 nav ul {
@@ -31,11 +50,7 @@ nav ul {
 }
 
 ul li {
-  padding: 2rem;
-}
-
-header {
-  border-bottom: 1px solid gray;
+  padding: 2rem 1rem;
 }
 
 .header {
@@ -44,9 +59,10 @@ header {
 
 article.preview {
   max-width: 50rem;
-  height: 25rem;
+  min-height: 25rem;
   padding: 2rem;
   margin: 3rem auto;
+  background-color: lightgray;
 }
 
 article.preview img {
@@ -54,9 +70,22 @@ article.preview img {
   max-width: 15rem;
 }
 
+article.preview div {
+  margin-right: 2rem;
+}
+
+article.preview div p {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
 img.logo-small {
   vertical-align: middle;
-  margin: 0 5px;
+  margin: 0 0.5rem;
+}
+
+img.logo-small.header {
+  margin: 0 1rem;
 }
 
 footer {
