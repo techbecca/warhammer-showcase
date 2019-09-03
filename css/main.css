@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  Font-Family: Raleway, Sans-serif;
+  Font-Family: Montserrat, Sans-serif;
   Font-Size: 14px;
   line-height: 1.4;
+  /* letter-spacing: 0.1em; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,7 +50,7 @@ nav ul {
   align-items: center;
 }
 
-ul li {
+nav li {
   padding: 2rem 1rem;
 }
 
@@ -86,6 +87,7 @@ img.logo-small {
 
 img.logo-small.header {
   margin: 0 1rem;
+  max-height: 50px;
 }
 
 footer {
