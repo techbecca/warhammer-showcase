@@ -1,0 +1,28 @@
+
+// Header
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  font-family: $font-headings;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  @extend %flex-container;
+  justify-content: space-between;
+  background: white;
+  padding: 0 1rem;
+  border-bottom: 1px solid gray;
+    .flex {
+      width: 30rem;
+    }
+}
+
+// Navigation
+nav > ul {
+  @extend %flex-container;
+}
+
+nav li {
+  padding: 2rem 1rem;
+}

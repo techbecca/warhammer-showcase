@@ -1,0 +1,73 @@
+/* Notes:
+BEM-model for naming classes: block__element--modifier
+Font-sizing idea: use px for root element, rem for block elements, and em for actual text elements (h1, h2, p, li, etc.)*/
+$font-body: 'Montserrat', Sans-serif;
+$font-headings: 'Cinzel', serif;
+
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: $font-body;
+  line-height: 1.4;
+}
+
+@include headings {
+  font-family: $font-headings;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.logo-small {
+  max-height: 50px;
+  margin: 0 0.5rem;
+}
+
+// FLexbox
+%flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex {
+  @extend %flex-container;
+  // justify-content: space-between;
+  // width: 25%;
+}
+
+footer {
+  @extend %flex-container;
+  justify-content: center;
+  padding: 2rem;
+  border-top: 1px solid gray;
+  z-index: 20;
+
+}
+
+@import 'header'; //also Navigation
+@import 'article';

@@ -1,0 +1,91 @@
+/* Notes:
+BEM-model for naming classes: block__element--modifier
+Font-sizing idea: use px for root element, rem for block elements, and em for actual text elements (h1, h2, p, li, etc.)*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Montserrat", Sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-size: 4em;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.logo-small {
+  max-height: 50px;
+  margin: 0 0.5rem;
+}
+
+footer, article.preview, nav > ul, header, .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  justify-content: space-between;
+  background: white;
+  padding: 0 1rem;
+  border-bottom: 1px solid gray;
+}
+header .flex {
+  width: 30rem;
+}
+
+nav li {
+  padding: 2rem 1rem;
+}
+
+article.preview {
+  max-width: 50rem;
+  min-height: 25rem;
+  padding: 2rem;
+  margin: 10rem auto;
+  background-color: lightgray;
+}
+article.preview div {
+  margin-right: 2rem;
+  text-align: justify;
+  padding-bottom: 2rem;
+}
+article.preview .preview__img {
+  margin: 2rem;
+  max-width: 15rem;
+}
+
+footer {
+  justify-content: center;
+  padding: 2rem;
+  border-top: 1px solid gray;
+  z-index: 20;
+}
+
+/*# sourceMappingURL=style.css.map */
