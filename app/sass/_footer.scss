@@ -1,0 +1,9 @@
+
+footer {
+  @extend %flex-container;
+  justify-content: center;
+  padding: 2rem;
+  border-top: 1px solid gray;
+  z-index: 20;
+
+}

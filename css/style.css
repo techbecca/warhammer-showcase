@@ -37,7 +37,7 @@ h6 {
   margin: 0 0.5rem;
 }
 
-footer, article.preview, nav > ul, header, .flex {
+article.preview, footer, nav > ul, header, .flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -64,6 +64,13 @@ nav li {
   padding: 2rem 1rem;
 }
 
+footer {
+  justify-content: center;
+  padding: 2rem;
+  border-top: 1px solid gray;
+  z-index: 20;
+}
+
 article.preview {
   max-width: 50rem;
   min-height: 25rem;
@@ -79,13 +86,6 @@ article.preview div {
 article.preview .preview__img {
   margin: 2rem;
   max-width: 15rem;
-}
-
-footer {
-  justify-content: center;
-  padding: 2rem;
-  border-top: 1px solid gray;
-  z-index: 20;
 }
 
 /*# sourceMappingURL=style.css.map */
