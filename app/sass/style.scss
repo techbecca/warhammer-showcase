@@ -12,7 +12,7 @@ Font-sizing idea: use px for root element, rem for block elements, and em for ac
 /* 1. Global Styles and Variables
 ================================================ */
 $font-body: 'Montserrat', Sans-serif;
-$font-headings: 'Cinzel', serif; // $font-headings: 'Montserrat', Sans-serif;
+$font-headings: 'Cinzel', serif;
 
 %headings-styles {
   font-family: $font-headings;
@@ -56,6 +56,10 @@ body {
   @extend %headings-styles;
 }
 
+h1 {
+  text-align: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -71,9 +75,9 @@ a {
 /* 3. Structure Styles
 (containers, show/hide on mobile classes)
 ================================================ */
-
 main > div {
   height: 100vh;
+  padding: 10%;
 }
 
 .flex {
@@ -137,11 +141,26 @@ $primary-button-color: gray;
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
+
 .hero {
-  padding: 10%;
   background-color: darkgray;
+  height: 95vh;
+}
+
+.pageination {
+  margin: 10em auto;
+
+  > div {
+    @extend %flex-container;
+    flex-direction: column;
+  }
+}
+
+.pageination__img {
+  max-width: 10em;
 }
 /* Logo */
+
 .logo-small {
   max-height: 25px;
   margin: 0 0.5rem;
