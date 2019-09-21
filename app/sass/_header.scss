@@ -5,17 +5,13 @@ header {
   width: 100%;
   z-index: 20;
   top: 0;
-  font-family: $font-headings;
+  @extend %headings-styles;
   font-size: 1.2rem;
-  letter-spacing: 0.1em;
   @extend %flex-container;
   justify-content: space-between;
   background: white;
   padding: 0 1rem;
-  border-bottom: 1px solid gray;
-    .flex {
-      width: 30rem;
-    }
+  border-bottom: 1px solid lightgray;
 }
 
 // Navigation

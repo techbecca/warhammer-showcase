@@ -1,9 +1,12 @@
 
-footer {
+footer.flex {
   @extend %flex-container;
   justify-content: center;
   padding: 2rem;
-  border-top: 1px solid gray;
+  height: 20rem;
+  border-top: 1px solid lightgray;
   z-index: 20;
-
+  @extend %headings-styles;
+  background: darkgray;
+  // color: white;
 }
