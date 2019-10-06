@@ -11,8 +11,8 @@ Font-sizing idea: use px for root element, rem for block elements, and em for ac
 ======================================== */
 /* 1. Global Styles and Variables
 ================================================ */
-$font-body: 'Montserrat', Sans-serif;
-$font-headings: 'Cinzel', serif;
+$font-body: 'Open Sans', sans-serif;
+$font-headings: 'Exo 2', sans-serif;
 
 %headings-styles {
   font-family: $font-headings;

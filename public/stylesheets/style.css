@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cinzel", serif;
+  font-family: "Exo 2", sans-serif;
   letter-spacing: 0.1em;
 }
 
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", Sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
