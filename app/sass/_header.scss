@@ -22,3 +22,7 @@ nav > ul {
 nav li {
   padding: 2rem 1rem;
 }
+
+nav .active {
+  color: $c-main-brand;
+}

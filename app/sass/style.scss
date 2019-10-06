@@ -14,17 +14,32 @@ Font-sizing idea: use px for root element, rem for block elements, and em for ac
 $font-body: 'Open Sans', sans-serif;
 $font-headings: 'Exo 2', sans-serif;
 
+/* Color Theme Swatches in Hex */
+$c-light-shade: #F3F5F4;
+$c-light-accent: #D1E0E0;
+$c-main-brand: #F3BA33;
+$c-dark-accent: #BD5442;
+$c-dark-shade: #333838;
+
+/* Color Theme Swatches in RGBA */
+$Warhammer-Showcase-1-1-rgba: rgba(243,245,244, 1);
+$Warhammer-Showcase-1-2-rgba: rgba(150,175,176, 1);
+$Warhammer-Showcase-1-3-rgba: rgba(243,186,51, 1);
+$Warhammer-Showcase-1-4-rgba: rgba(189,84,66, 1);
+$Warhammer-Showcase-1-5-rgba: rgba(57,52,57, 1);
+
+/* Color Theme Swatches in HSLA */
+$Warhammer-Showcase-1-1-hsla: hsla(150, 9, 95, 1);
+$Warhammer-Showcase-1-2-hsla: hsla(182, 14, 63, 1);
+$Warhammer-Showcase-1-3-hsla: hsla(42, 88, 57, 1);
+$Warhammer-Showcase-1-4-hsla: hsla(8, 48, 50, 1);
+$Warhammer-Showcase-1-5-hsla: hsla(300, 4, 21, 1);
+
 %headings-styles {
   font-family: $font-headings;
   letter-spacing: 0.1em;
 }
 
-%flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
 @mixin headings {
   h1,
   h2,
@@ -47,7 +62,10 @@ html {
 body {
   font-family: $font-body;
   line-height: 1.5;
+  color: $c-dark-shade;
+  background-color: $c-light-shade;
 }
+
 /* 2. Typography Styles
 ================================================ */
 @include headings {
@@ -70,12 +88,19 @@ a {
   max-width: 40rem;
   padding: 0 3rem;
 }
+
 /* 3. Structure Styles
 (containers, show/hide on mobile classes)
 ================================================ */
 main > div {
-  height: 100vh;
-  padding: 10%;
+  padding: 5% 10% ;
+}
+
+%flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .flex {
@@ -85,14 +110,17 @@ main > div {
     padding: 0 1em;
   }
 }
+
 /* 4. Module Styles
 (header, footer)
 ================================================ */
 @import 'header';
-@import 'footer'; /* 5. Component Styles
+@import 'footer';
+
+/* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-$primary-button-color: gray;
+$primary-button-color: $c-dark-accent;
 
 .button {
   border-radius: 100px;
@@ -136,21 +164,28 @@ $primary-button-color: gray;
   height: 100%;
   width: 100%;
 }
+
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
 
 .hero {
-  background-color: darkgray;
-  height: 95vh;
+  background-color: $c-main-brand;
+  height: 100vh;
 }
 
 .pageination {
-  margin: 10em auto;
+  margin: 6em auto;
+  @extend %flex-container;
+  justify-content: center;
 
   > div {
     @extend %flex-container;
     flex-direction: column;
+    margin: 0 2.5em;
+    padding: 2em 4em;
+    background-color: $c-light-accent;
+    border-radius: 10px;
   }
 }
 

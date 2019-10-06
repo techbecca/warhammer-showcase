@@ -7,6 +7,6 @@ footer.flex {
   border-top: 1px solid lightgray;
   z-index: 20;
   @extend %headings-styles;
-  background: darkgray;
-  // color: white;
+  background: $c-dark-shade;
+  color: $c-light-shade;
 }

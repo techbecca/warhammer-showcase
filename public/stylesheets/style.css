@@ -11,6 +11,9 @@ Font-sizing idea: use px for root element, rem for block elements, and em for ac
 ======================================== */
 /* 1. Global Styles and Variables
 ================================================ */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 footer.flex, header, h1,
 h2,
 h3,
@@ -19,13 +22,6 @@ h5,
 h6 {
   font-family: "Exo 2", sans-serif;
   letter-spacing: 0.1em;
-}
-
-.article-preview, .pageination > div, footer.flex, nav > ul, header, .flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
 }
 
 * {
@@ -39,6 +35,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
+  color: #333838;
+  background-color: #F3F5F4;
 }
 
 /* 2. Typography Styles
@@ -63,8 +61,14 @@ a {
 (containers, show/hide on mobile classes)
 ================================================ */
 main > div {
-  height: 100vh;
-  padding: 10%;
+  padding: 5% 10%;
+}
+
+.article-preview, .pageination > div, .pageination, footer.flex, nav > ul, header, .flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .flex > * {
@@ -90,13 +94,18 @@ nav li {
   padding: 2rem 1rem;
 }
 
+nav .active {
+  color: #F3BA33;
+}
+
 footer.flex {
   justify-content: center;
   padding: 2rem;
   height: 20rem;
   border-top: 1px solid lightgray;
   z-index: 20;
-  background: darkgray;
+  background: #333838;
+  color: #F3F5F4;
 }
 
 /* 5. Component Styles
@@ -104,7 +113,7 @@ footer.flex {
 ================================================ */
 .button {
   border-radius: 100px;
-  background-color: gray;
+  background-color: #BD5442;
   border: none;
   color: white;
   outline: none;
@@ -124,19 +133,19 @@ footer.flex {
 }
 
 .button:before {
-  border-top: 2px solid gray;
+  border-top: 2px solid #BD5442;
   left: 0;
   top: -5px;
 }
 
 .button:after {
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #BD5442;
   bottom: -5px;
   right: 0;
 }
 
 .button:hover {
-  background-color: gray;
+  background-color: #BD5442;
 }
 
 .button:hover:after,
@@ -149,15 +158,20 @@ footer.flex {
 (page specific styles, primarily classes)
 ================================================ */
 .hero {
-  background-color: darkgray;
-  height: 95vh;
+  background-color: #F3BA33;
+  height: 100vh;
 }
 
 .pageination {
-  margin: 10em auto;
+  margin: 6em auto;
+  justify-content: center;
 }
 .pageination > div {
   flex-direction: column;
+  margin: 0 2.5em;
+  padding: 2em 4em;
+  background-color: #D1E0E0;
+  border-radius: 10px;
 }
 
 .pageination__img {
@@ -176,7 +190,7 @@ footer.flex {
   height: auto;
   padding: 2rem;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: #F3F5F4;
   flex-wrap: nowrap;
 }
 .article-preview .col-1 {
