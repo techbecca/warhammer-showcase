@@ -6,7 +6,10 @@ footer.flex {
   height: 20rem;
   border-top: 1px solid lightgray;
   z-index: 20;
-  @extend %headings-styles;
   background: $c-dark-shade;
   color: $c-light-shade;
+  font-family: $font-headings;
+  p {
+    margin: 0
+  }
 }

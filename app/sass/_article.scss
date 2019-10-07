@@ -14,10 +14,13 @@
     text-align: justify;
     padding-bottom: 2rem;
 
-    h1 {
+    h1,h2,h3,h4 {
       text-align: left;
+      margin-bottom: 1em;
     }
   }
+
+  // TODO: refactor to use float on image and button
 
   .col-2 {
     display: flex;

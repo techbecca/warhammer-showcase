@@ -12,18 +12,6 @@ Font-sizing idea: use px for root element, rem for block elements, and em for ac
 /* 1. Global Styles and Variables
 ================================================ */
 /* Color Theme Swatches in Hex */
-/* Color Theme Swatches in RGBA */
-/* Color Theme Swatches in HSLA */
-footer.flex, header, h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Exo 2", sans-serif;
-  letter-spacing: 0.1em;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -34,15 +22,49 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.45;
   color: #333838;
   background-color: #F3F5F4;
 }
 
 /* 2. Typography Styles
 ================================================ */
+p {
+  margin-bottom: 1.25em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
 h1 {
+  margin-top: 0;
+  font-size: 3.052em;
   text-align: center;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+small, .text_small {
+  font-size: 0.8em;
 }
 
 a {
@@ -50,11 +72,8 @@ a {
   text-decoration: none;
 }
 
-.title {
-  font-size: 4rem;
-  text-align: left;
-  max-width: 40rem;
-  padding: 0 3rem;
+a:hover {
+  text-decoration: underline;
 }
 
 /* 3. Structure Styles
@@ -88,6 +107,10 @@ header {
   background: white;
   padding: 0 20%;
   border-bottom: 1px solid lightgray;
+  font-family: "Exo 2", sans-serif;
+}
+header p {
+  margin: 0;
 }
 
 nav li {
@@ -106,6 +129,10 @@ footer.flex {
   z-index: 20;
   background: #333838;
   color: #F3F5F4;
+  font-family: "Exo 2", sans-serif;
+}
+footer.flex p {
+  margin: 0;
 }
 
 /* 5. Component Styles
@@ -198,8 +225,9 @@ footer.flex {
   text-align: justify;
   padding-bottom: 2rem;
 }
-.article-preview .col-1 h1 {
+.article-preview .col-1 h1, .article-preview .col-1 h2, .article-preview .col-1 h3, .article-preview .col-1 h4 {
   text-align: left;
+  margin-bottom: 1em;
 }
 .article-preview .col-2 {
   display: flex;

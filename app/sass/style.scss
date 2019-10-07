@@ -21,35 +21,6 @@ $c-main-brand: #F3BA33;
 $c-dark-accent: #BD5442;
 $c-dark-shade: #333838;
 
-/* Color Theme Swatches in RGBA */
-$Warhammer-Showcase-1-1-rgba: rgba(243,245,244, 1);
-$Warhammer-Showcase-1-2-rgba: rgba(150,175,176, 1);
-$Warhammer-Showcase-1-3-rgba: rgba(243,186,51, 1);
-$Warhammer-Showcase-1-4-rgba: rgba(189,84,66, 1);
-$Warhammer-Showcase-1-5-rgba: rgba(57,52,57, 1);
-
-/* Color Theme Swatches in HSLA */
-$Warhammer-Showcase-1-1-hsla: hsla(150, 9, 95, 1);
-$Warhammer-Showcase-1-2-hsla: hsla(182, 14, 63, 1);
-$Warhammer-Showcase-1-3-hsla: hsla(42, 88, 57, 1);
-$Warhammer-Showcase-1-4-hsla: hsla(8, 48, 50, 1);
-$Warhammer-Showcase-1-5-hsla: hsla(300, 4, 21, 1);
-
-%headings-styles {
-  font-family: $font-headings;
-  letter-spacing: 0.1em;
-}
-
-@mixin headings {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @content;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -61,32 +32,47 @@ html {
 
 body {
   font-family: $font-body;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.45;
   color: $c-dark-shade;
   background-color: $c-light-shade;
 }
 
 /* 2. Typography Styles
 ================================================ */
-@include headings {
-  @extend %headings-styles;
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: $font-headings;
+  font-weight: 600;
+  line-height: 1.15;
 }
 
 h1 {
+  margin-top: 0;
+  font-size: 3.052em;
   text-align: center;
 }
+
+h2 {font-size: 2.441em;}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
-.title {
-  font-size: 4rem;
-  text-align: left;
-  // line-height: 2;
-  max-width: 40rem;
-  padding: 0 3rem;
+a:hover {
+  text-decoration: underline;
 }
 
 /* 3. Structure Styles
