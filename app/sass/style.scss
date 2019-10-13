@@ -171,7 +171,8 @@ $primary-button-color: $c-dark-accent;
     flex-direction: column;
     margin: 0 2.5em;
     padding: 2em 4em;
-    background-color: $c-light-accent;
+    border: 1px solid $c-light-accent;
+    box-shadow: 2px 2px 1px $c-dark-shade;
     border-radius: 10px;
   }
 }
