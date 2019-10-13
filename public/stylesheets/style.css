@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #333838;
-  background-color: #F3F5F4;
+  background-color: white;
 }
 
 /* 2. Typography Styles
@@ -219,6 +219,7 @@ footer.flex p {
   margin: 0 auto;
   background-color: #F3F5F4;
   flex-wrap: nowrap;
+  border-radius: 10px;
 }
 .article-preview .col-1 {
   margin-right: 2rem;

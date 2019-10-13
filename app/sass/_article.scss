@@ -8,7 +8,7 @@
   margin: 0 auto;
   background-color: $c-light-shade;
   flex-wrap: nowrap;
-  // TODO: use rounded edges
+  border-radius: 10px;
 
   .col-1 {
     margin-right: 2rem;
