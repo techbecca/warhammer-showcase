@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #333838;
-  background-color: white;
+  background-color: #F3F5F4;
 }
 
 /* 2. Typography Styles
@@ -104,9 +104,9 @@ header {
   top: 0;
   font-size: 1.2rem;
   justify-content: space-between;
-  background: white;
+  background: #F3F5F4;
   padding: 0 20%;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #D1E0E0;
   font-family: "Exo 2", sans-serif;
 }
 header p {
