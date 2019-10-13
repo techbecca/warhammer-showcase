@@ -83,7 +83,7 @@ main > div {
   padding: 5% 10%;
 }
 
-.article-preview, .pageination > div, .pageination, footer.flex, nav > ul, header, .flex {
+.article-preview, .articles > div, .articles, footer.flex, nav > ul, header, .flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -189,11 +189,11 @@ footer.flex p {
   height: 100vh;
 }
 
-.pageination {
+.articles {
   margin: 6em auto;
   justify-content: center;
 }
-.pageination > div {
+.articles > div {
   flex-direction: column;
   margin: 0 2.5em;
   padding: 2em 4em;
@@ -202,7 +202,7 @@ footer.flex p {
   border-radius: 10px;
 }
 
-.pageination__img {
+.articles__img {
   max-width: 10em;
 }
 

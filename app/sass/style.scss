@@ -161,7 +161,7 @@ $primary-button-color: $c-dark-accent;
   // TODO: use background that is off-set, so it ends mid-way through article?
 }
 
-.pageination {
+.articles {
   margin: 6em auto;
   @extend %flex-container;
   justify-content: center;
@@ -177,7 +177,7 @@ $primary-button-color: $c-dark-accent;
   }
 }
 
-.pageination__img {
+.articles__img {
   max-width: 10em;
 }
 /* Logo */
