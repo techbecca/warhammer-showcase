@@ -106,7 +106,7 @@ header {
   justify-content: space-between;
   background: #F3F5F4;
   padding: 0 20%;
-  border-bottom: 1px solid #D1E0E0;
+  border-bottom: 1px solid #F2AB39;
   font-family: "Exo 2", sans-serif;
 }
 header p {
@@ -118,7 +118,7 @@ nav li {
 }
 
 nav .active {
-  color: #F3BA33;
+  color: #F2AB39;
 }
 
 footer.flex {
@@ -140,7 +140,7 @@ footer.flex p {
 ================================================ */
 .button {
   border-radius: 100px;
-  background-color: #BD5442;
+  background-color: #F2AB39;
   border: none;
   color: white;
   outline: none;
@@ -160,19 +160,19 @@ footer.flex p {
 }
 
 .button:before {
-  border-top: 2px solid #BD5442;
+  border-top: 2px solid #F2AB39;
   left: 0;
   top: -5px;
 }
 
 .button:after {
-  border-bottom: 2px solid #BD5442;
+  border-bottom: 2px solid #F2AB39;
   bottom: -5px;
   right: 0;
 }
 
 .button:hover {
-  background-color: #BD5442;
+  background-color: #F2AB39;
 }
 
 .button:hover:after,
@@ -185,7 +185,6 @@ footer.flex p {
 (page specific styles, primarily classes)
 ================================================ */
 .hero {
-  background-color: #F3BA33;
   height: 100vh;
 }
 
@@ -197,7 +196,7 @@ footer.flex p {
   flex-direction: column;
   margin: 0 2.5em;
   padding: 2em 4em;
-  border: 1px solid #D1E0E0;
+  border: 1px solid #563C16;
   box-shadow: 2px 2px 1px #333838;
   border-radius: 10px;
 }

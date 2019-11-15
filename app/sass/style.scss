@@ -15,11 +15,11 @@ $font-body: 'Open Sans', sans-serif;
 $font-headings: 'Exo 2', sans-serif;
 
 /* Color Theme Swatches in Hex */
-$c-light-shade: #F3F5F4;
-$c-light-accent: #D1E0E0;
-$c-main-brand: #F3BA33;
-$c-dark-accent: #BD5442;
-$c-dark-shade: #333838;
+$c-background: #F3F5F4;
+// $c-light-accent: #D1E0E;
+$c-primary: #F2AB39;
+$c-secondary: #563C16;
+$c-text: #333838;
 
 
 * {
@@ -34,8 +34,8 @@ body {
   font-family: $font-body;
   font-weight: 400;
   line-height: 1.45;
-  color: $c-dark-shade;
-  background-color: $c-light-shade;
+  color: $c-text;
+  background-color: $c-background;
 }
 
 /* 2. Typography Styles
@@ -106,7 +106,7 @@ main > div {
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-$primary-button-color: $c-dark-accent;
+$primary-button-color: $c-primary;
 
 .button {
   border-radius: 100px;
@@ -156,7 +156,7 @@ $primary-button-color: $c-dark-accent;
 ================================================ */
 
 .hero {
-  background-color: $c-main-brand; // TODO: use gradient background instead?
+  // background-color: $c-primary; // TODO: use gradient background instead?
   height: 100vh;
   // TODO: use background that is off-set, so it ends mid-way through article?
 }
@@ -171,8 +171,8 @@ $primary-button-color: $c-dark-accent;
     flex-direction: column;
     margin: 0 2.5em;
     padding: 2em 4em;
-    border: 1px solid $c-light-accent;
-    box-shadow: 2px 2px 1px $c-dark-shade;
+    border: 1px solid $c-secondary;
+    box-shadow: 2px 2px 1px $c-text;
     border-radius: 10px;
   }
 }
