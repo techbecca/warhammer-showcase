@@ -9,6 +9,8 @@
   background-color: $c-background;
   flex-wrap: nowrap;
   border-radius: 10px;
+  border: 1px solid $c-secondary;
+  box-shadow: 2px 2px 1px $c-secondary;
 
   .col-1 {
     margin-right: 2rem;

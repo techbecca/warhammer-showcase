@@ -106,7 +106,7 @@ header {
   justify-content: space-between;
   background: #F3F5F4;
   padding: 0 20%;
-  border-bottom: 1px solid #F2AB39;
+  border-bottom: 1px solid #563C16;
   font-family: "Exo 2", sans-serif;
 }
 header p {
@@ -197,7 +197,7 @@ footer.flex p {
   margin: 0 2.5em;
   padding: 2em 4em;
   border: 1px solid #563C16;
-  box-shadow: 2px 2px 1px #333838;
+  box-shadow: 2px 2px 1px #563C16;
   border-radius: 10px;
 }
 
@@ -220,6 +220,8 @@ footer.flex p {
   background-color: #F3F5F4;
   flex-wrap: nowrap;
   border-radius: 10px;
+  border: 1px solid #563C16;
+  box-shadow: 2px 2px 1px #563C16;
 }
 .article-preview .col-1 {
   margin-right: 2rem;
