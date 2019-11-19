@@ -21,6 +21,7 @@ $c-main-brand: #F3BA33;
 $c-dark-accent: #BD5442;
 $c-dark-shade: #333838;
 
+$c-primary-button: #00A993;
 $header-height: 4em;
 
 
@@ -115,7 +116,7 @@ main > section {
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-$primary-button-color: $c-dark-accent;
+$primary-button-color: $c-primary-button;
 
 .button {
   border-radius: 100px;

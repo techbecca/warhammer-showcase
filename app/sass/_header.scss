@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   background: $c-light-shade;
   height: $header-height;
-  padding: 10% 15%;
+  padding: 0 15%;
   border-bottom: 1px solid $c-light-accent;
   font-family: $font-headings;
 
@@ -29,5 +29,5 @@ nav li {
 }
 
 nav .active {
-  color: $c-main-brand;
+  color: $c-dark-accent;
 }

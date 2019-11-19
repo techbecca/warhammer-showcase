@@ -112,7 +112,6 @@ header {
   top: 0;
   font-size: 1.2rem;
   justify-content: space-between;
-  align-items: center;
   background: #F3F5F4;
   height: 4em;
   padding: 0 15%;
@@ -128,7 +127,7 @@ nav li {
 }
 
 nav .active {
-  color: #F3BA33;
+  color: #BD5442;
 }
 
 footer.flex {
@@ -150,7 +149,7 @@ footer.flex p {
 ================================================ */
 .button {
   border-radius: 100px;
-  background-color: #BD5442;
+  background-color: #00A993;
   border: none;
   color: white;
   outline: none;
@@ -170,19 +169,19 @@ footer.flex p {
 }
 
 .button:before {
-  border-top: 2px solid #BD5442;
+  border-top: 2px solid #00A993;
   left: 0;
   top: -5px;
 }
 
 .button:after {
-  border-bottom: 2px solid #BD5442;
+  border-bottom: 2px solid #00A993;
   bottom: -5px;
   right: 0;
 }
 
 .button:hover {
-  background-color: #BD5442;
+  background-color: #00A993;
 }
 
 .button:hover:after,
