@@ -195,8 +195,8 @@ footer.flex p {
 (page specific styles, primarily classes)
 ================================================ */
 .hero {
-  background-color: #F3BA33;
-  height: 100vh;
+  background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
+  height: 95vh;
 }
 
 .articles {

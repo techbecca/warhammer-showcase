@@ -165,8 +165,8 @@ $primary-button-color: $c-dark-accent;
 ================================================ */
 
 .hero {
-  background-color: $c-main-brand; // TODO: use gradient background instead?
-  height: 100vh;
+  background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
+  height: 95vh;
   // TODO: use background that is off-set, so it ends mid-way through article?
 }
 
