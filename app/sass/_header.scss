@@ -9,7 +9,8 @@ header {
   @extend %flex-container;
   justify-content: space-between;
   background: $c-light-shade;
-  padding: 0 20%; // TODO: make lower height
+  height: $header-height;
+  padding: 10% 15%;
   border-bottom: 1px solid $c-light-accent;
   font-family: $font-headings;
 

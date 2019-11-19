@@ -79,7 +79,15 @@ a:hover {
 /* 3. Structure Styles
 (containers, show/hide on mobile classes)
 ================================================ */
+main {
+  padding-top: 4em;
+}
+
 main > div {
+  padding: 5% 10%;
+}
+
+main > section {
   padding: 5% 10%;
 }
 
@@ -104,8 +112,10 @@ header {
   top: 0;
   font-size: 1.2rem;
   justify-content: space-between;
+  align-items: center;
   background: #F3F5F4;
-  padding: 0 20%;
+  height: 4em;
+  padding: 0 15%;
   border-bottom: 1px solid #D1E0E0;
   font-family: "Exo 2", sans-serif;
 }

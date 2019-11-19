@@ -21,6 +21,8 @@ $c-main-brand: #F3BA33;
 $c-dark-accent: #BD5442;
 $c-dark-shade: #333838;
 
+$header-height: 4em;
+
 
 * {
   box-sizing: border-box;
@@ -78,10 +80,17 @@ a:hover {
 /* 3. Structure Styles
 (containers, show/hide on mobile classes)
 ================================================ */
+
+main {
+  padding-top:$header-height;
+}
 main > div {
   padding: 5% 10% ;
 }
 
+main > section {
+  padding: 5% 10% ;
+}
 %flex-container {
   display: flex;
   flex-wrap: wrap;
