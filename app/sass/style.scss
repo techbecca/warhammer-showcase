@@ -164,6 +164,7 @@ $primary-button-color: $c-primary-button;
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
+@import 'article-preview';
 
 .hero {
   background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
@@ -196,4 +197,3 @@ $primary-button-color: $c-primary-button;
   max-height: 25px;
   margin: 0 0.5rem;
 }
-@import 'article';

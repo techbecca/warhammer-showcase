@@ -91,7 +91,7 @@ main > section {
   padding: 5% 10%;
 }
 
-.article-preview, .articles > div, .articles, footer.flex, nav > ul, header, .flex {
+.articles > div, .articles, .article-preview, footer.flex, nav > ul, header, .flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -193,34 +193,6 @@ footer.flex p {
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
-.hero {
-  background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
-  height: 95vh;
-}
-
-.articles {
-  margin: 6em auto;
-  justify-content: center;
-}
-.articles > div {
-  flex-direction: column;
-  margin: 0 2.5em;
-  padding: 2em 4em;
-  border: 1px solid #D1E0E0;
-  box-shadow: 2px 2px 1px #333838;
-  border-radius: 10px;
-}
-
-.articles__img {
-  max-width: 10em;
-}
-
-/* Logo */
-.logo-small {
-  max-height: 25px;
-  margin: 0 0.5rem;
-}
-
 .article-preview {
   max-width: 50rem;
   min-height: 25rem;
@@ -248,6 +220,34 @@ footer.flex p {
 .article-preview .article-preview__img {
   margin: 2rem;
   max-width: 15rem;
+}
+
+.hero {
+  background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
+  height: 95vh;
+}
+
+.articles {
+  margin: 6em auto;
+  justify-content: center;
+}
+.articles > div {
+  flex-direction: column;
+  margin: 0 2.5em;
+  padding: 2em 4em;
+  border: 1px solid #D1E0E0;
+  box-shadow: 2px 2px 1px #333838;
+  border-radius: 10px;
+}
+
+.articles__img {
+  max-width: 10em;
+}
+
+/* Logo */
+.logo-small {
+  max-height: 25px;
+  margin: 0 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
