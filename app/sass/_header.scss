@@ -18,16 +18,3 @@ header {
     margin: 0;
   }
 }
-
-// Navigation
-nav > ul {
-  @extend %flex-container;
-}
-
-nav li {
-  padding: 2rem 1rem;
-}
-
-nav .active {
-  color: $c-dark-accent;
-}

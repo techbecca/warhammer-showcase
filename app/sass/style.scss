@@ -106,11 +106,31 @@ form {
 
 .flex {
   @extend %flex-container;
-
   > * {
     padding: 0 1em;
   }
 }
+
+// Navigation
+nav {
+  display: flex;
+  justify-content: center;
+
+  > ul {
+    @extend %flex-container;
+  }
+
+  li {
+    padding: 2rem 1rem;
+  }
+
+  .active {
+    color: $c-dark-accent;
+  }
+  
+}
+
+
 
 /* 4. Module Styles
 (header, footer)
@@ -171,6 +191,13 @@ $primary-button-color: $c-primary-button;
 .button:hover:before {
   height: 100%;
   width: 100%;
+}
+
+.pagination {
+  list-style: none;
+  > li {
+
+  }
 }
 
 /* 6. Page Styles

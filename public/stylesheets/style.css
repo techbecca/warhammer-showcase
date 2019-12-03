@@ -95,7 +95,7 @@ form {
   text-align: center;
 }
 
-.articles > div, .articles, .article-preview, footer.flex, nav > ul, header, .flex {
+.articles > div, .articles, .article-preview, footer.flex, header, nav > ul, .flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -104,6 +104,17 @@ form {
 
 .flex > * {
   padding: 0 1em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  padding: 2rem 1rem;
+}
+nav .active {
+  color: #BD5442;
 }
 
 /* 4. Module Styles
@@ -124,14 +135,6 @@ header {
 }
 header p {
   margin: 0;
-}
-
-nav li {
-  padding: 2rem 1rem;
-}
-
-nav .active {
-  color: #BD5442;
 }
 
 footer.flex {
@@ -201,6 +204,9 @@ input {
   width: 100%;
 }
 
+.pagination {
+  list-style: none;
+}
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
