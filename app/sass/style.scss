@@ -92,6 +92,10 @@ main > div {
 main > section {
   padding: 5% 10% ;
 }
+
+form {
+  text-align: center;
+}
 %flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +120,11 @@ main > section {
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
+input {
+  margin: 2em 2em;
+  padding: 0.7em 8em;
+}
+
 $primary-button-color: $c-primary-button;
 
 .button {
