@@ -212,23 +212,19 @@ $primary-button-color: $c-primary-button;
 }
 
 .articles {
-  margin: 6em auto;
+  margin: 3em auto;
   @extend %flex-container;
   justify-content: center;
 
   > div {
     @extend %flex-container;
     flex-direction: column;
-    margin: 0 2.5em;
+    margin: 2em 2.5em;
     padding: 2em 4em;
     border: 1px solid $c-light-accent;
     box-shadow: 2px 2px 1px $c-dark-shade;
     border-radius: 10px;
   }
-}
-
-.search--input {
-  margin: auto;
 }
 
 .articles__img {
