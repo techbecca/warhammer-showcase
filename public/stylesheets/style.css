@@ -152,8 +152,10 @@ footer.flex p {
 (buttons, input, etc.)
 ================================================ */
 input {
+  text-align: left;
   margin: 2em 2em;
-  padding: 0.7em 8em;
+  padding: 0.7em 0.8em;
+  width: 22rem;
 }
 
 .button {
