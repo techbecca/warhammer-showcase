@@ -91,6 +91,10 @@ main > section {
   padding: 5% 10%;
 }
 
+form {
+  text-align: center;
+}
+
 .articles > div, .articles, .article-preview, footer.flex, nav > ul, header, .flex {
   display: flex;
   flex-wrap: wrap;
@@ -147,6 +151,11 @@ footer.flex p {
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
+input {
+  margin: 2em 2em;
+  padding: 0.7em 8em;
+}
+
 .button {
   border-radius: 100px;
   background-color: #00A993;
@@ -238,6 +247,10 @@ footer.flex p {
   border: 1px solid #D1E0E0;
   box-shadow: 2px 2px 1px #333838;
   border-radius: 10px;
+}
+
+.search--input {
+  margin: auto;
 }
 
 .articles__img {

@@ -96,6 +96,7 @@ main > section {
 form {
   text-align: center;
 }
+
 %flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +196,10 @@ $primary-button-color: $c-primary-button;
     box-shadow: 2px 2px 1px $c-dark-shade;
     border-radius: 10px;
   }
+}
+
+.search--input {
+  margin: auto;
 }
 
 .articles__img {
