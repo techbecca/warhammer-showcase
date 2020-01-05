@@ -1,0 +1,24 @@
+table {
+  margin: 0 auto;
+  text-align: center;
+  background-color: $c-light-accent;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
+}
+
+tfoot {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+thead th, tfoot th {
+  font-style: $font-headings;
+}
+
+th, td {
+  padding: 10px;
+}

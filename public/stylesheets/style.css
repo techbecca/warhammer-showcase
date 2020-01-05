@@ -1,6 +1,11 @@
 /* Notes:
 BEM-model for naming classes: block__element--modifier
-Font-sizing idea: use px for root element, rem for block elements, and em for actual text elements (h1, h2, p, li, etc.)*/
+Font-sizing idea:
+  use px for root element,
+  rem for block elements,
+  and em (based on font-size of parent element) for actual text elements (h1, h2, p, li, etc.)
+
+*/
 /* Site Stylesheet
   1. Global Styles and Variables
   2. Typography Styles
@@ -25,7 +30,7 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #333838;
-  background-color: #F3F5F4;
+  background-color: white;
 }
 
 /* 2. Typography Styles
@@ -120,6 +125,10 @@ nav .active {
 /* 4. Module Styles
 (header, footer)
 ================================================ */
+.form__input {
+  width: 50%;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -127,7 +136,7 @@ header {
   top: 0;
   font-size: 1.2rem;
   justify-content: space-between;
-  background: #F3F5F4;
+  background: white;
   height: 4em;
   padding: 0 15%;
   border-bottom: 1px solid #D1E0E0;
@@ -151,10 +160,35 @@ footer.flex p {
   margin: 0;
 }
 
+table {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #D1E0E0;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
+}
+
+tfoot {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+thead th, tfoot th {
+  font-style: "Exo 2", sans-serif;
+}
+
+th, td {
+  padding: 10px;
+}
+
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-input {
+.input {
   text-align: left;
   margin: 2em 2em;
   padding: 0.7em 0.8em;
@@ -163,7 +197,7 @@ input {
 
 .button {
   border-radius: 100px;
-  background-color: #00A993;
+  background-color: #F3BA33;
   border: none;
   color: white;
   outline: none;
@@ -172,36 +206,12 @@ input {
   margin: 0 auto;
 }
 
-.button:after,
-.button:before {
-  border: 0 solid transparent;
-  transition: all 0.25s;
-  content: "";
-  height: 24px;
+.button__up {
   position: absolute;
-  width: 24px;
-}
-
-.button:before {
-  border-top: 2px solid #00A993;
-  left: 0;
-  top: -5px;
-}
-
-.button:after {
-  border-bottom: 2px solid #00A993;
-  bottom: -5px;
-  right: 0;
-}
-
-.button:hover {
-  background-color: #00A993;
-}
-
-.button:hover:after,
-.button:hover:before {
-  height: 100%;
-  width: 100%;
+  border-radius: 100%;
+  bottom: 100px;
+  right: 100px;
+  padding: 20px;
 }
 
 .pagination {
@@ -255,6 +265,10 @@ input {
   border: 1px solid #D1E0E0;
   box-shadow: 2px 2px 1px #333838;
   border-radius: 10px;
+}
+
+.articles--front-page {
+  background-color: #F3F5F4;
 }
 
 .articles__img {

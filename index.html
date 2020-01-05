@@ -28,7 +28,9 @@
   </header>
   <main>
     <div class="hero flex">
-      <!-- <h1 class="title">Beor's Warhammer Showcase</h1> -->
+      <h1 class="title">Beor's Warhammer Showcase</h1>
+    </div>
+    <div>
       <article class="article-preview">
         <div class="col-1">
           <h1>The spectacle before us was indeed sublime.</h1>
@@ -40,7 +42,11 @@
         </div>
       </article>
     </div>
-    <div>
+    <button class="button button__up">
+    UP!
+    <i class="fas fa-arrow-up"></i>
+  </button>
+    <div class="articles--front-page">
       <h1>Articles</h1>
       <div class="articles">
         <div>
@@ -55,7 +61,16 @@
           <img class="articles__img" src="assets\helmet-large.png" alt="">
           <h2>Article 3</h2>
         </div>
-
+        <nav aria-label="pagination">
+          <ul class="pagination">
+            <li><a href=""><i class="fas fa-chevron-left"></i></a></li>
+            <li><a href=""><i class="far fa-circle"></i></a></li>
+            <li><a href="" class="active"><i class="fas fa-circle"></i></a></li>
+            <li><a href=""><i class="far fa-circle"></i></a></li>
+            <li><a href=""><i class="far fa-circle"></i></a></li>
+            <li><a href=""><i class="fas fa-chevron-right"></i></a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </main>
