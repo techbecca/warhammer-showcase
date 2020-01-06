@@ -170,14 +170,22 @@ $primary-button-color: $c-primary-button;
   padding: 12px 40px 10px;
   position: relative;
   margin: 0 auto;
+  font-family: $font-headings;
 }
 
 .button__up {
-  position: absolute;
+  position: sticky;
   border-radius: 100%;
-  bottom: 100px;
-  right: 100px;
-  padding: 20px;
+  top: 70vh;
+  left: 85vw;
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+  cursor: pointer;
+  i {
+    margin-bottom: 3px;
+  }
 }
 
 .pagination {
@@ -194,8 +202,8 @@ $primary-button-color: $c-primary-button;
 
 .hero {
   background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
-  height: 95vh;
-  // TODO: use background that is off-set, so it ends mid-way through article?
+  height: 80vh;
+  color: whitesmoke;
 }
 
 .articles {

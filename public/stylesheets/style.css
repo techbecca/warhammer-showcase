@@ -204,14 +204,22 @@ th, td {
   padding: 12px 40px 10px;
   position: relative;
   margin: 0 auto;
+  font-family: "Exo 2", sans-serif;
 }
 
 .button__up {
-  position: absolute;
+  position: sticky;
   border-radius: 100%;
-  bottom: 100px;
-  right: 100px;
-  padding: 20px;
+  top: 70vh;
+  left: 85vw;
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  z-index: 10;
+  cursor: pointer;
+}
+.button__up i {
+  margin-bottom: 3px;
 }
 
 .pagination {
@@ -225,7 +233,7 @@ th, td {
   min-height: 25rem;
   height: auto;
   padding: 2rem;
-  margin: 0 auto;
+  margin: 5rem auto;
   background-color: #F3F5F4;
   flex-wrap: nowrap;
   border-radius: 10px;
@@ -251,7 +259,8 @@ th, td {
 
 .hero {
   background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
-  height: 95vh;
+  height: 80vh;
+  color: whitesmoke;
 }
 
 .articles {
