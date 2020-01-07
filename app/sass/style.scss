@@ -210,16 +210,24 @@ $primary-button-color: $c-primary-button;
   margin: 3em auto;
   @extend %flex-container;
   justify-content: center;
-
-  > div {
-    @extend %flex-container;
-    flex-direction: column;
-    margin: 2em 2.5em;
-    padding: 2em 4em;
-    border: 1px solid $c-light-accent;
-    box-shadow: 2px 2px 1px $c-dark-shade;
-    border-radius: 10px;
+  i {
+    margin: 0 2rem;
   }
+  h3 {
+    margin: 0;
+  }
+}
+
+.article {
+  @extend %flex-container;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid $c-light-accent;
+  box-shadow: 2px 2px 1px $c-dark-shade;
+  border-radius: 10px;
+
 }
 
 .articles--front-page {
@@ -227,8 +235,9 @@ $primary-button-color: $c-primary-button;
 }
 
 .articles__img {
-  max-width: 10em;
+  max-width: 8rem;
 }
+
 /* Logo */
 
 .logo-small {
