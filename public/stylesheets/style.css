@@ -100,7 +100,7 @@ form {
   text-align: center;
 }
 
-.article, .articles, .article-preview, footer.flex, header, nav > ul, .flex {
+.article, .articles, .article-preview, .footer, header, nav > ul, .flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -146,8 +146,8 @@ header p {
   margin: 0;
 }
 
-footer.flex {
-  justify-content: center;
+.footer {
+  justify-content: space-around;
   padding: 2rem;
   height: 20rem;
   border-top: 1px solid lightgray;
@@ -156,8 +156,19 @@ footer.flex {
   color: #F3F5F4;
   font-family: "Exo 2", sans-serif;
 }
-footer.flex p {
+.footer p {
   margin: 0;
+}
+
+.footer__contact i {
+  margin: 0.5rem 1rem;
+}
+
+.footer__credits {
+  max-width: 300px;
+}
+.footer__credits img {
+  margin: 0 1rem;
 }
 
 table {
