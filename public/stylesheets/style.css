@@ -19,6 +19,7 @@ Font-sizing idea:
 /* Color Theme Swatches in Hex */
 * {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
@@ -26,7 +27,6 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #333838;
@@ -39,7 +39,11 @@ p {
   margin-bottom: 1.25em;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 2.75rem 0 1rem;
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
@@ -68,7 +72,8 @@ h5 {
   font-size: 1.25em;
 }
 
-small, .text_small {
+.text_small,
+small {
   font-size: 0.8em;
 }
 
@@ -96,8 +101,24 @@ main > section {
   padding: 5% 10%;
 }
 
-form {
-  text-align: center;
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search-form {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 400px;
+}
+
+.search-form__input {
+  text-align: left;
+  padding: 0.7em 0.8em;
+  width: 80%;
 }
 
 .article, .articles, .article-preview, .footer, header, nav > ul, .flex {
@@ -125,8 +146,11 @@ nav .active {
 /* 4. Module Styles
 (header, footer)
 ================================================ */
-.form__input {
-  width: 50%;
+.form__div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 header {
@@ -199,13 +223,6 @@ th, td {
 /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-.input {
-  text-align: left;
-  margin: 2em 2em;
-  padding: 0.7em 0.8em;
-  width: 22rem;
-}
-
 .button {
   border-radius: 100px;
   background-color: #F3BA33;

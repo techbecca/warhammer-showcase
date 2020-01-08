@@ -1,4 +1,3 @@
-
 /* Notes:
 BEM-model for naming classes: block__element--modifier
 Font-sizing idea:
@@ -7,7 +6,6 @@ Font-sizing idea:
   and em (based on font-size of parent element) for actual text elements (h1, h2, p, li, etc.)
 
 */
-
 /* Site Stylesheet
   1. Global Styles and Variables
   2. Typography Styles
@@ -19,21 +17,18 @@ Font-sizing idea:
 /* 1. Global Styles and Variables
 ================================================ */
 $font-body: 'Open Sans', sans-serif;
-$font-headings: 'Exo 2', sans-serif;
-
-/* Color Theme Swatches in Hex */
+$font-headings: 'Exo 2', sans-serif; /* Color Theme Swatches in Hex */
 $c-light-shade: #F3F5F4;
 $c-light-accent: #D1E0E0;
 $c-main-brand: #F3BA33;
 $c-dark-accent: #BD5442;
 $c-dark-shade: #333838;
-
-$c-primary-button: $c-main-brand;//#00A993;
+$c-primary-button: $c-main-brand; //#00A993;
 $header-height: 4em;
-
 
 * {
   box-sizing: border-box;
+  font-family: $font-body;
 }
 
 html {
@@ -41,19 +36,22 @@ html {
 }
 
 body {
-  font-family: $font-body;
   font-weight: 400;
   line-height: 1.45;
   color: $c-dark-shade;
   background-color: white;
 }
-
 /* 2. Typography Styles
 ================================================ */
+p {
+  margin-bottom: 1.25em;
+}
 
-p {margin-bottom: 1.25em;}
-
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 2.75rem 0 1rem;
   font-family: $font-headings;
   font-weight: 600;
@@ -66,15 +64,26 @@ h1 {
   text-align: center;
 }
 
-h2 {font-size: 2.441em;}
+h2 {
+  font-size: 2.441em;
+}
 
-h3 {font-size: 1.953em;}
+h3 {
+  font-size: 1.953em;
+}
 
-h4 {font-size: 1.563em;}
+h4 {
+  font-size: 1.563em;
+}
 
-h5 {font-size: 1.25em;}
+h5 {
+  font-size: 1.25em;
+}
 
-small, .text_small {font-size: 0.8em;}
+.text_small,
+small {
+  font-size: 0.8em;
+}
 
 a {
   color: inherit;
@@ -84,24 +93,39 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 /* 3. Structure Styles
 (containers, show/hide on mobile classes)
 ================================================ */
-
 main {
-  padding-top:$header-height;
+  padding-top: $header-height;
 }
+
 main > div {
-  padding: 5% 10% ;
+  padding: 5% 10%;
 }
 
 main > section {
-  padding: 5% 10% ;
+  padding: 5% 10%;
 }
 
-form {
-  text-align: center;
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search-form {
+  margin: 2rem auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 400px;
+}
+
+.search-form__input {
+  text-align: left;
+  padding: 0.7em 0.8em;
+  width: 80%;
 }
 
 %flex-container {
@@ -113,12 +137,13 @@ form {
 
 .flex {
   @extend %flex-container;
+
   > * {
     padding: 0 1em;
   }
 }
-
 // Navigation
+
 nav {
   display: flex;
   justify-content: center;
@@ -134,30 +159,23 @@ nav {
   .active {
     color: $c-dark-accent;
   }
-
 }
-
-
-
 /* 4. Module Styles
 (header, footer)
 ================================================ */
-.form__input {
-  width: 50%;
+
+.form__div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 @import 'header';
 @import 'footer';
-@import 'table';
-
-/* 5. Component Styles
+@import 'table'; /* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
-.input {
-  text-align: left;
-  margin: 2em 2em;
-  padding: 0.7em 0.8em;
-  width: 22rem;
-}
+
 
 $primary-button-color: $c-primary-button;
 
@@ -183,6 +201,7 @@ $primary-button-color: $c-primary-button;
   width: 60px;
   z-index: 10;
   cursor: pointer;
+
   i {
     margin-bottom: 3px;
   }
@@ -190,11 +209,9 @@ $primary-button-color: $c-primary-button;
 
 .pagination {
   list-style: none;
-  > li {
 
-  }
+  > li {}
 }
-
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
@@ -210,9 +227,11 @@ $primary-button-color: $c-primary-button;
   margin: 3em auto;
   @extend %flex-container;
   justify-content: center;
+
   i {
     margin: 0 2rem;
   }
+
   h3 {
     margin: 0;
   }
@@ -227,7 +246,6 @@ $primary-button-color: $c-primary-button;
   border: 1px solid $c-light-accent;
   box-shadow: 2px 2px 1px $c-dark-shade;
   border-radius: 10px;
-
 }
 
 .articles--front-page {
@@ -237,9 +255,7 @@ $primary-button-color: $c-primary-button;
 .articles__img {
   max-width: 8rem;
 }
-
 /* Logo */
-
 .logo-small {
   max-height: 25px;
   margin: 0 0.5rem;

@@ -70,14 +70,10 @@
     </section>
     <section class="contact">
       <h1>Contact Me</h1>
-      <form action="" id="contact">
-        Email: <input class="form__input" type="text" name="email" value="youremail@example.com">
-        <br/>
-        <textarea class="form__input" type="submit"  name="message">
-          A penny for your thoughts?
-        </textarea>
-        <br>
-        <input type="submit">
+      <form class="contact-form" action="" id="contact">
+        <div class="form__div"><label for="email">Email</label><input class="form__input" type="text" name="email" value="youremail@example.com"></div>
+        <div class="form__div"><textarea class="form__input" type="submit"  name="message">A penny for your thoughts?</textarea></div>
+        <div class="form__div"><input type="submit" value="Send"/></div>
       </form>
     </section>
   </main>
