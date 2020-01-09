@@ -128,15 +128,8 @@ main > section {
   width: 80%;
 }
 
-%flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .flex {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 
@@ -146,15 +139,21 @@ main > section {
 }
 // Navigation
 
-nav {
-  display: flex;
-  justify-content: center;
-
-  > ul {
+nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+  li {
+    padding: 2rem 1rem;
   }
+
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   li {
     padding: 2rem 1rem;
@@ -163,6 +162,7 @@ nav {
   .active {
     color: $c-dark-accent;
   }
+
 }
 /* 4. Module Styles
 (header, footer)

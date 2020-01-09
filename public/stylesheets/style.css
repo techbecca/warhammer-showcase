@@ -123,7 +123,6 @@ main > section {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -131,19 +130,24 @@ main > section {
   padding: 0 1em;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
-nav > ul {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-nav li {
+nav ul li {
   padding: 2rem 1rem;
 }
-nav .active {
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li {
+  padding: 2rem 1rem;
+}
+.pagination .active {
   color: #BD5442;
 }
 
