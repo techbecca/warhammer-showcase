@@ -9,7 +9,6 @@
   padding: 2rem;
   margin: 5rem auto;
   background-color: $c-light-shade;
-  flex-wrap: nowrap;
   border-radius: 10px;
 
   .col-1 {
@@ -22,8 +21,6 @@
       margin-bottom: 1em;
     }
   }
-
-  // TODO: refactor to use float on image and button
 
   .col-2 {
     display: flex;
