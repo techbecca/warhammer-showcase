@@ -227,7 +227,7 @@ $primary-button-color: $c-primary-button;
   color: whitesmoke;
 }
 
-.articles {
+.articles-container {
   margin: 3em auto;
   display: flex;
   align-items: center;
@@ -242,7 +242,7 @@ $primary-button-color: $c-primary-button;
   }
 }
 
-.article {
+.article-item {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -254,11 +254,11 @@ $primary-button-color: $c-primary-button;
   border-radius: 10px;
 }
 
-.articles--front-page {
+.articles-container--front-page {
   background-color: $c-light-shade;
 }
 
-.articles__img {
+.article-item__img {
   max-width: 8rem;
 }
 /* Logo */

@@ -306,20 +306,20 @@ th, td {
   color: whitesmoke;
 }
 
-.articles {
+.articles-container {
   margin: 3em auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.articles i {
+.articles-container i {
   margin: 0 2rem;
 }
-.articles h3 {
+.articles-container h3 {
   margin: 0;
 }
 
-.article {
+.article-item {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -331,11 +331,11 @@ th, td {
   border-radius: 10px;
 }
 
-.articles--front-page {
+.articles-container--front-page {
   background-color: #F3F5F4;
 }
 
-.articles__img {
+.article-item__img {
   max-width: 8rem;
 }
 
