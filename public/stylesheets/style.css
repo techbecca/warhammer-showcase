@@ -121,13 +121,12 @@ main > section {
   width: 80%;
 }
 
-.article, .articles, .article-preview, .footer, header, nav > ul, .flex {
+.flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-
 .flex > * {
   padding: 0 1em;
 }
@@ -135,6 +134,11 @@ main > section {
 nav {
   display: flex;
   justify-content: center;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 nav li {
   padding: 2rem 1rem;
@@ -159,6 +163,8 @@ header {
   z-index: 20;
   top: 0;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   background: white;
   height: 4em;
@@ -171,6 +177,8 @@ header p {
 }
 
 .footer {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
   padding: 2rem;
   height: 20rem;
@@ -257,6 +265,9 @@ th, td {
 (page specific styles, primarily classes)
 ================================================ */
 .article-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   max-width: 50rem;
   min-height: 25rem;
   height: auto;
@@ -293,6 +304,8 @@ th, td {
 
 .articles {
   margin: 3em auto;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .articles i {
@@ -303,8 +316,10 @@ th, td {
 }
 
 .article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: column;
-  flex-wrap: nowrap;
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #D1E0E0;

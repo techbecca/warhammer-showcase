@@ -6,7 +6,8 @@ header {
   z-index: 20;
   top: 0;
   font-size: 1.2rem;
-  @extend %flex-container;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   background: white;
   height: $header-height;

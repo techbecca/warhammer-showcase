@@ -1,6 +1,8 @@
 
 .article-preview {
-  @extend %flex-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   max-width: 50rem;
   min-height: 25rem;
   height: auto;
