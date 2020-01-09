@@ -133,6 +133,9 @@ nav ul {
 nav ul li {
   padding: 2rem 1rem;
 }
+nav ul li:hover {
+  color: #BD5442;
+}
 
 .pagination {
   display: flex;

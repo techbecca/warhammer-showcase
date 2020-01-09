@@ -143,6 +143,10 @@ nav ul {
   li {
     padding: 2rem 1rem;
   }
+  
+  li:hover {
+    color: $c-dark-accent;
+  }
 
 }
 
