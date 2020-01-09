@@ -268,7 +268,7 @@ th, td {
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */
-.article-preview {
+.preview-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -281,21 +281,21 @@ th, td {
   flex-wrap: nowrap;
   border-radius: 10px;
 }
-.article-preview .col-1 {
+.preview-box .col-1 {
   margin-right: 2rem;
   text-align: justify;
   padding-bottom: 2rem;
 }
-.article-preview .col-1 h1, .article-preview .col-1 h2, .article-preview .col-1 h3, .article-preview .col-1 h4 {
+.preview-box .col-1 h1, .preview-box .col-1 h2, .preview-box .col-1 h3, .preview-box .col-1 h4 {
   text-align: left;
   margin-bottom: 1em;
 }
-.article-preview .col-2 {
+.preview-box .col-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.article-preview .article-preview__img {
+.preview-box .preview-box__img {
   margin: 2rem;
   max-width: 15rem;
 }
