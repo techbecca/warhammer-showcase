@@ -186,21 +186,6 @@ $primary-button-color: $c-primary-button;
   font-family: $font-headings;
 }
 
-.button__up {
-  position: sticky;
-  border-radius: 100%;
-  top: 70vh;
-  left: 85vw;
-  padding: 15px;
-  height: 60px;
-  width: 60px;
-  z-index: 10;
-  cursor: pointer;
-
-  i {
-    margin-bottom: 3px;
-  }
-}
 
 .pagination {
   list-style: none;

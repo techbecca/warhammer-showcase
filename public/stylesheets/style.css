@@ -245,21 +245,6 @@ th, td {
   font-family: "Exo 2", sans-serif;
 }
 
-.button__up {
-  position: sticky;
-  border-radius: 100%;
-  top: 70vh;
-  left: 85vw;
-  padding: 15px;
-  height: 60px;
-  width: 60px;
-  z-index: 10;
-  cursor: pointer;
-}
-.button__up i {
-  margin-bottom: 3px;
-}
-
 .pagination {
   list-style: none;
 }
