@@ -19,3 +19,13 @@ header {
     margin: 0;
   }
 }
+
+.header__logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  > * {
+    padding: 0 1em;
+  }
+}
