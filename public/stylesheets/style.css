@@ -107,13 +107,21 @@ main > section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-width: 400px;
+  min-width: 200px;
+}
+.search-form * {
+  margin: 10px;
 }
 
 .search-form__input {
   text-align: left;
-  padding: 0.7em 0.8em;
-  width: 80%;
+  height: 2.2rem;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+#search-form__icon--small {
+  display: none;
 }
 
 nav ul {
@@ -341,6 +349,22 @@ section:nth-of-type(2n+2) {
 .logo-small {
   max-height: 25px;
   margin: 0 0.5rem;
+}
+
+/* 7. Media queries
+================================== */
+@media only screen and (max-width: 900px) {
+  .search-form__input {
+    height: 1.8rem;
+  }
+
+  #search-form__icon--small {
+    display: inline-block;
+  }
+
+  #search-form__icon--big {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
