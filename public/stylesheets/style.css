@@ -262,7 +262,6 @@ th, td {
   padding: 2rem;
   margin: 5rem auto;
   background-color: #F3F5F4;
-  flex-wrap: nowrap;
   border-radius: 10px;
 }
 .preview-box .col-1 {
