@@ -10,9 +10,6 @@
   background: $c-dark-shade;
   color: $c-light-shade;
   font-family: $font-headings;
-  p {
-    margin: 0;
-  }
 
   display: grid;
   grid-template-columns: 1fr minmax(220px, 2fr) 2fr minmax(220px, 2fr) 1fr;
@@ -22,13 +19,19 @@
 
 .footer__contact {
   grid-column: 2 / span 1;
-    i {
-      margin: 0.5rem 1rem;
+  i {
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
     }
 }
 
 .footer__credits {
   max-width: 300px;
   grid-column: 4 / span 1;
-
+  p {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+  img {
+    margin: -0.3rem 0.5rem;
+  }
 }
