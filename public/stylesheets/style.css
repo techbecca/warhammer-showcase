@@ -164,6 +164,9 @@ header {
 header p {
   margin: 0;
 }
+header i.header__hamburger-menu {
+  display: none;
+}
 
 .header__logo-div {
   display: flex;

@@ -18,6 +18,10 @@ header {
   p {
     margin: 0;
   }
+
+  i.header__hamburger-menu {
+    display: none;
+  }
 }
 
 .header__logo-div {
