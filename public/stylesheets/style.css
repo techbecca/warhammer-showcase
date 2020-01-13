@@ -136,18 +136,6 @@ nav ul li:hover {
   color: #BD5442;
 }
 
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pagination li {
-  padding: 2rem 1rem;
-}
-.pagination .active {
-  color: #BD5442;
-}
-
 /* 4. Module Styles
 (header, footer)
 ================================================ */
@@ -258,6 +246,18 @@ th, td {
 }
 
 .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination li {
+  padding: 2rem 1rem;
+}
+.pagination .active {
+  color: #BD5442;
+}
+
+ul.pagination {
   list-style: none;
 }
 
@@ -314,12 +314,11 @@ section:nth-of-type(2n+2) {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  border: 1px solid red;
 }
-.articles-carousel i {
-  margin: 0 2rem;
-}
-.articles-carousel h3 {
-  margin: 0;
+.articles-carousel > * {
+  flex: 1 0 10%;
 }
 
 /* Article library */
@@ -353,7 +352,21 @@ section:nth-of-type(2n+2) {
 
 /* 7. Media queries
 ================================== */
+@media only screen and (max-width: 1500px) {
+  .hide--1500px {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hide--1200px {
+    display: none;
+  }
+}
 @media only screen and (max-width: 900px) {
+  .hide--900px {
+    display: none;
+  }
+
   .search-form__input {
     height: 1.8rem;
   }

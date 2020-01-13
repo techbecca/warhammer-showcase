@@ -151,20 +151,7 @@ nav ul {
 
 }
 
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  li {
-    padding: 2rem 1rem;
-  }
-
-  .active {
-    color: $c-dark-accent;
-  }
-
-}
 /* 4. Module Styles
 (header, footer)
 ================================================ */
@@ -177,7 +164,9 @@ nav ul {
 }
 @import 'header';
 @import 'footer';
-@import 'table'; /* 5. Component Styles
+@import 'table';
+
+/* 5. Component Styles
 (buttons, input, etc.)
 ================================================ */
 
@@ -196,8 +185,22 @@ $primary-button-color: $c-primary-button;
   font-family: $font-headings;
 }
 
-
 .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    padding: 2rem 1rem;
+  }
+
+  .active {
+    color: $c-dark-accent;
+  }
+
+}
+
+ul.pagination {
   list-style: none;
 }
 /* 6. Page Styles
@@ -224,14 +227,13 @@ section:nth-of-type(2n+2) {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  border: 1px solid red;
+   > * {
+    flex: 1 0 10%;
 
-  i {
-    margin: 0 2rem;
   }
 
-  h3 {
-    margin: 0;
-  }
 }
 
 /* Article library */
@@ -267,8 +269,23 @@ section:nth-of-type(2n+2) {
 /* 7. Media queries
 ================================== */
 
+@media only screen and (max-width: 1500px) {
+  .hide--1500px {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .hide--1200px {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 900px) {
+
+  .hide--900px {
+    display: none;
+  }
   .search-form__input {
     height: 1.8rem;
   }
