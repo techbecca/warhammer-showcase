@@ -182,6 +182,11 @@ header i.header__hamburger-menu {
     display: none;
   }
 }
+@media only screen and (max-width: 800px) {
+  header {
+    padding: 0 5%;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
