@@ -1,8 +1,8 @@
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr minmax(220px, 2fr) 2fr minmax(220px, 2fr) 1fr;
+  align-items: flex-start;
   padding: 2rem;
   height: 20rem;
   border-top: 1px solid lightgray;
@@ -10,11 +10,6 @@
   background: $c-dark-shade;
   color: $c-light-shade;
   font-family: $font-headings;
-
-  display: grid;
-  grid-template-columns: 1fr minmax(220px, 2fr) 2fr minmax(220px, 2fr) 1fr;
-  align-items: flex-start;
-
 }
 
 .footer__contact {
