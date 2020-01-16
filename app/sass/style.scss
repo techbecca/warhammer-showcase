@@ -159,9 +159,19 @@ nav ul {
 .contact-form__div {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  padding-top: 5%;
+  min-width: 250px;
+
+  .form__input {
+    flex: 1 0 80%;
+  }
+
+  label {
+    flex: 1 0 20%;
+  }
 }
+
 @import 'header';
 @import 'footer';
 @import 'table';
