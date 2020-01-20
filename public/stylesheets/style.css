@@ -163,7 +163,7 @@ header {
   justify-content: space-between;
   background: white;
   height: 5rem;
-  padding: 0 15%;
+  padding: 0 10%;
   border-bottom: 1px solid #D1E0E0;
   font-family: "Exo 2", sans-serif;
 }
@@ -179,8 +179,8 @@ header i.header__hamburger-menu {
   align-items: center;
   justify-content: space-around;
 }
-.header__logo-div > * {
-  padding: 0 1em;
+.header__logo-div .header__logo-text {
+  margin: 0 1em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -188,9 +188,14 @@ header i.header__hamburger-menu {
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
-  header {
-    padding: 0 5%;
+@media only screen and (max-width: 550px) {
+  header i.header__hamburger-menu {
+    display: inline-block;
+  }
+
+  .header__nav {
+    display: none;
+    font-size: 1.1rem;
   }
 }
 .footer {

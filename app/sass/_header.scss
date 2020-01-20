@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   background: white;
   height: $header-height;
-  padding: 0 15%;
+  padding: 0 10%;
   border-bottom: 1px solid $c-light-accent;
   font-family: $font-headings;
 
@@ -29,9 +29,9 @@ header {
   align-items: center;
   justify-content: space-around;
 
-  > * {
-    padding: 0 1em;
-  }
+	.header__logo-text {
+		margin: 0 1em;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -40,8 +40,15 @@ header {
   }
 }
 
-@media only screen and (max-width: 800px) {
-  header {
-    padding: 0 5%;
-  }
+@media only screen and (max-width: 550px) {
+	header {
+		i.header__hamburger-menu {
+			display: inline-block;
+		}
+	}
+
+	.header__nav {
+		display: none;
+		font-size: 1.1rem;
+	}
 }
