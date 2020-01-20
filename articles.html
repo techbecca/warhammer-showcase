@@ -13,24 +13,25 @@
   <header>
       <div class="header__logo-div">
         <img src="assets\helmet.png" alt="" class="logo-small header">
-        <p class="header">Beor's Warhammer Showcase</p>
+        <p class="header__logo-text">Beor's Warhammer Showcase</p>
       </div>
-    <nav>
+    <nav class="header__nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="articles.html">Articles</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <i class="fas fa-bars header__hamburger-menu"></i>
   </header>
   <main>
     <section>
       <h1>Articles</h1>
       <form id="search-articles" class="search-form" action="" method="get">
-          <i class="fas fa-search fa-2x"></i><input class="search-form__input" type="text" name="search" value="">
+          <i class="fas fa-search fa-2x" id="search-form__icon--big"></i>
+          <i class="fas fa-search" id="search-form__icon--small"> </i><input class="search-form__input" type="text" name="search" value="">
       </form>
-      <div class="articles-container">
-        <a href=""><i class="fas fa-chevron-left fa-2x"></i></a>
+      <div class="articles-library">
         <div class="article-item">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 1</h3>
@@ -51,18 +52,76 @@
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 5</h3>
         </div>
-        <a href=""><i class="fas fa-chevron-right fa-2x"></i></a>
-      </div>
-      <div aria-label="pagination">
-        <ul class="pagination">
-          <li><a href=""><i class="far fa-circle"></i></a></li>
-          <li><a href="" class="active"><i class="fas fa-circle"></i></a></li>
-          <li><a href=""><i class="far fa-circle"></i></a></li>
-          <li><a href=""><i class="far fa-circle"></i></a></li>
-        </ul>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 6</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 7</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 8</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 9</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 10</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 11</h3>
+        </div>
+        <div class="article-item">
+          <img class="article-item__img" src="assets\helmet-large.png" alt="">
+          <h3>Article 12</h3>
+        </div>
+
       </div>
     </section>
   </main>
-
+  <footer class="footer">
+    <div class="footer-contact">
+      <h4 class="footer__header">Contact</h4>
+      <ul>
+        <li>
+          <a href="tel:+4670-123435321">
+            <i class="fas fa-phone-alt footer-contact__icon--small"></i>
+            <i class="fas fa-phone-alt fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">+4670-123435321</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:email@example.com">
+            <i class="fas fa-envelope footer-contact__icon--small"></i>
+            <i class="fas fa-envelope fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">email@example.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/bearswede/">
+            <i class="fab fa-instagram footer-contact__icon--small"></i>
+            <i class="fab fa-instagram fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">@bearswede</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bearswede">
+            <i class="fab fa-twitter footer-contact__icon--small"></i>
+            <i class="fab fa-twitter fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">@bearswede</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-credits">
+      <h4 class="footer__header">Credits</h4>
+      <p><img src="assets\helmet.png" alt="" class="logo-small"> Logo made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </div>
+  </footer>
 </body>
 </html>

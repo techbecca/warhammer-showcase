@@ -16,79 +16,103 @@
   <header>
       <div class="header__logo-div">
         <img src="assets\helmet.png" alt="" class="logo-small header">
-        <p class="header">Beor's Warhammer Showcase</p>
+        <p class="header__logo-text">Beor's Warhammer Showcase</p>
       </div>
-    <nav>
+    <nav class="header__nav">
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="articles.html">Articles</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
+    <i class="fas fa-bars header__hamburger-menu"></i>
   </header>
   <main>
     <section class="hero">
-      <h1 class="title">Beor's Warhammer Showcase</h1>
+      <h1 class="hero__title">Beor's Warhammer Showcase</h1>
     </section>
     <section>
       <article class="preview-box">
-        <div class="col-1">
           <h1>The spectacle before us was indeed sublime.</h1>
           <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
-        </div>
-        <div class="col-2">
           <img class="preview-box__img" src="assets\helmet-large.png" alt="">
           <a href="#" class="button button-primary">Read More</a>
-        </div>
       </article>
     </section>
-    <section class="articles-container--front-page">
+    <section>
       <h1>Articles</h1>
-      <div class="articles-container">
-        <a href=""><i class="fas fa-chevron-left fa-2x"></i></a>
+      <div class="articles-carousel">
         <div class="article-item">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 1</h3>
         </div>
-        <div class="article-item">
+        <div class="article-item hide--550px">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 2</h3>
         </div>
-        <div class="article-item">
+        <div class="article-item hide--900px">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 3</h3>
         </div>
-        <div class="article-item">
+        <div class="article-item hide--1200px">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 4</h3>
         </div>
-        <div class="article-item">
+        <div class="article-item hide--1500px">
           <img class="article-item__img" src="assets\helmet-large.png" alt="">
           <h3>Article 5</h3>
         </div>
-        <a href=""><i class="fas fa-chevron-right fa-2x"></i></a>
       </div>
+
       <div aria-label="pagination">
         <ul class="pagination">
-          <li><a href=""><i class="far fa-circle"></i></a></li>
+          <li><a href=""><i class="fas fa-chevron-left"></i></a></li>
           <li><a href="" class="active"><i class="fas fa-circle"></i></a></li>
           <li><a href=""><i class="far fa-circle"></i></a></li>
           <li><a href=""><i class="far fa-circle"></i></a></li>
+          <li><a href=""><i class="far fa-circle"></i></a></li>
+          <li><a href=""><i class="fas fa-chevron-right"></i></a></li>
         </ul>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__contact">
-      <h4>Contact</h4>
-      <p><i class="fas fa-phone-alt"></i><a href="tel:+4670-123435321">+4670-123435321</a></p>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:email@example.com">email@example.com</a> </p>
-      <p><i class="fab fa-instagram"></i> @bearswede</p>
-      <p><i class="fab fa-twitter"></i> @bearswede</p>
+    <div class="footer-contact">
+      <h4 class="footer__header">Contact</h4>
+      <ul>
+        <li>
+          <a href="tel:+4670-123435321">
+            <i class="fas fa-phone-alt footer-contact__icon--small"></i>
+            <i class="fas fa-phone-alt fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">+4670-123435321</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:email@example.com">
+            <i class="fas fa-envelope footer-contact__icon--small"></i>
+            <i class="fas fa-envelope fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">email@example.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/bearswede/">
+            <i class="fab fa-instagram footer-contact__icon--small"></i>
+            <i class="fab fa-instagram fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">@bearswede</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bearswede">
+            <i class="fab fa-twitter footer-contact__icon--small"></i>
+            <i class="fab fa-twitter fa-2x footer-contact__icon--large"></i>
+            <span class="footer-contact__text">@bearswede</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="footer__credits">
-      <h4>Credits</h4>
-    <img src="assets\helmet.png" alt="" class="logo-small"> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    <div class="footer-credits">
+      <h4 class="footer__header">Credits</h4>
+      <p><img src="assets\helmet.png" alt="" class="logo-small"> Logo made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
     </div>
   </footer>
 </body>

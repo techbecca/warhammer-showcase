@@ -1,35 +1,81 @@
 
 .preview-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   max-width: 50rem;
-  min-height: 25rem;
-  height: auto;
+  // max-height: 80vh;
   padding: 2rem;
-  margin: 5rem auto;
-  background-color: $c-light-shade;
+  margin: 0 auto;
+  background-color: white;
   border-radius: 10px;
+  display: grid;
+  grid-template: 1fr / 3fr 2fr;
+  grid-gap: 20px;
 
-  .col-1 {
-    margin-right: 2rem;
-    text-align: justify;
-    padding-bottom: 2rem;
-
-    h1,h2,h3,h4 {
-      text-align: left;
-      margin-bottom: 1em;
-    }
+  h1 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    text-align: left;
   }
 
-  .col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  p {
+    grid-area: 2 / 1 / span 1 / span 2;
+    text-align: justify;
   }
 
   .preview-box__img {
-    margin: 2rem;
-    max-width: 15rem;
+    grid-area: 1 / 2 / span 1 / span 1;
+    width: 80%;
+    align-self:  center;
+    justify-self: center;
+    max-height: 100%;
   }
+
+  .button {
+    grid-area: 3 / 1 / span 1 / span 2;
+    justify-self: end;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .preview-box h1 {
+      font-size: 2.8em;
+    }
+}
+
+@media only screen and (max-width: 800px){
+  .preview-box h1 {
+      font-size: 2.4em;
+    }
+}
+
+@media only screen and (max-width: 700px){
+  .preview-box h1 {
+      font-size: 2em;
+    }
+}
+@media only screen and (max-width: 600px){
+  .preview-box h1 {
+      font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+  .preview-box {
+    h1 {
+      grid-column-end: 3;
+      text-align: center;
+    }
+    .preview-box__img {
+        grid-area: 2 / 1 / span 1 / span 2;
+      }
+    p {
+        grid-row-start: 3;
+      }
+
+    .button {
+        grid-row-start: 4;
+        justify-self: center;
+      }
+  }
+
 }
