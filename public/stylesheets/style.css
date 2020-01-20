@@ -198,7 +198,6 @@ header i.header__hamburger-menu {
   grid-template-columns: 1fr minmax(220px, 2fr) 2fr minmax(220px, 2fr) 1fr;
   align-items: flex-start;
   padding: 2rem;
-  height: 20rem;
   border-top: 1px solid lightgray;
   z-index: 20;
   background: #333838;
@@ -206,25 +205,65 @@ header i.header__hamburger-menu {
   font-family: "Exo 2", sans-serif;
 }
 
-.footer__contact {
+.footer-contact {
   grid-column: 2/span 1;
 }
-.footer__contact i {
+.footer-contact i {
   margin: 0.5rem 1rem 0.5rem 0.5rem;
 }
+.footer-contact .footer-contact__icon--large {
+  display: none;
+}
 
-.footer__credits {
+.footer-credits {
   max-width: 300px;
   grid-column: 4/span 1;
 }
-.footer__credits p {
+.footer-credits p {
   margin-left: 0.5rem;
   margin-bottom: 0;
 }
-.footer__credits img {
+.footer-credits img {
   margin: -0.3rem 0.5rem;
 }
 
+@media only screen and (max-width: 550px) {
+  .footer {
+    grid-template: repeat(2, 1fr)/minmax(220px, 2fr);
+    grid-row-gap: 40px;
+    align-items: center;
+  }
+
+  .footer-credits {
+    grid-area: 2/1/span 1/span 1;
+    text-align: center;
+    font-size: 0.88rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .footer-contact {
+    grid-area: 1/1/span 1/span 1;
+  }
+  .footer-contact ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .footer-contact .footer-contact__icon--small {
+    display: none;
+  }
+  .footer-contact .footer-contact__icon--large {
+    display: inline-block;
+  }
+  .footer-contact .footer-contact__text {
+    display: none;
+  }
+
+  .footer__header {
+    display: none;
+  }
+}
 table {
   margin: 0 auto;
   text-align: center;
