@@ -56,10 +56,11 @@ h5 {
   font-family: $font-headings;
   font-weight: 600;
   line-height: 1.15;
+  text-align: center;
 }
 
 h1 {
-  // margin-top: 0;
+  margin-top: 0;
   font-size: 3.052em;
   text-align: center;
 }
@@ -187,7 +188,6 @@ $primary-button-color: $c-primary-button;
   border-radius: 100px;
   background-color: $primary-button-color;
   border: none;
-  color: white;
   outline: none;
   padding: 12px 40px 10px;
   position: relative;
