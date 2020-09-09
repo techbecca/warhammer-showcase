@@ -94,7 +94,7 @@ a:hover {
 (containers, show/hide on mobile classes)
 ================================================ */
 main {
-  padding-top: $header-height;
+  margin-top: $header-height;
 }
 
 
@@ -221,7 +221,7 @@ ul.pagination {
 
 .hero {
   background-image: linear-gradient(to right bottom, #f3ba33, #ed9e35, #e1833a, #d16a3f, #bd5442);
-  height: 80vh;
+  height: calc(95vh - 5rem);
   color: whitesmoke;
   display: flex;
   align-items: center;
