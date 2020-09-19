@@ -1,0 +1,167 @@
+@charset utf-8;
+/* ----------------------------------------
+
+	skin-color: SkyBlue
+
+/*
+---------------------------------------- */
+
+::selection {
+	background-color:#39C2F0;
+}
+::-moz-selection {
+	background-color:#39C2F0;
+}
+.sf-menu li li a:hover,
+.sf-menu li li.sfHover > a,
+.sf-menu li li.current-menu-item > a,
+.normal-button,
+.normal-button.small,
+.normal-button.larg,
+.normal-button.xlarg,
+.normal-button.reverse:hover,
+.normal-button.reverse.small:hover,
+.normal-button.reverse.larg:hover,
+.normal-button.reverse.xlarg:hover,
+input[type='submit'],
+.stunningtext a.stunning:hover,
+.stunningtext.dark a.stunning,
+.h-wrapper .line,
+#nivoslider,
+.showcase-thumbnail-container,
+.cycle-wrapper,
+#tmslider-holder,
+.sliderNav #nav ul li.showPage a,
+.service-1:hover,
+.service-1.dark .normal-button:hover,
+.service-2:hover .icon,
+.sidebar .widget-recent-portfolio .featured-thumbnail,
+#footer-wrapper .widget-recent-portfolio .featured-thumbnail,
+.post_widget_item .featured-thumbnail,
+.sidebar .widget_persianart_sidemenu li:hover,
+#sidebarright.sidebar .widget_persianart_sidemenu li:hover,
+.posts .featured-thumbnail-wrapper .date-wrap,
+#postsinglepage.posts .featured-thumbnail-wrapper .date-wrap,
+.posts .featured-thumbnail,
+.ports .featured-thumbnail,
+.portfolio-item-wrapper.style1 li:hover h2,
+.portfolio-item-wrapper.style2 li:hover h2,
+.portfolio-item-wrapper.default li:hover .portfolio-item-context,
+#portfoliosinglepage .date-wrapper,
+#portfoliosinglepage .featured-thumbnail-wrapper:hover .date-wrapper,
+.ports li:hover .featured-thumbnail-wrapper .date-wrapper,
+.featured-thumbnail .zoom-icon.gallery-port.border,
+.related .related-title,
+#pagination .current,
+.table th,
+.table tfoot td,
+.table tfoot tr:hover,
+.post_shortcode_item .featured-thumbnail,
+.shortcode-button,
+.featured-thumbnail.image-frame .image-wrap,
+.shortcodeslider.featured-thumbnail,
+.personnel-shortcode .personnel-image,
+.price-content-wrapper,
+.price-content-left,
+.price-content-right,
+.price-button-wrapper-left,
+.price-button-wrapper-right,
+.accordion-head:hover,
+.toggle-head:hover,
+.active .accordion-head:hover,
+.active .toggle-head:hover,
+.active .accordion-head-sign,
+.active .toggle-head-sign,
+.sidebar .tagcloud a:hover,
+#footer-wrapper .tagcloud a:hover {
+	background-color:#39C2F0;
+}
+
+
+a,
+a:active,
+a.reverse:hover,
+.skin-color,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.sf-menu a:hover,
+.sf-menu > li.sfHover,
+.sf-menu > li.current-menu-item,
+.sf-menu > li > a:hover,
+.sf-menu > li.sfHover > a,
+.sf-menu > li.current-menu-item > a,
+.active .accordion-head,
+.active .toggle-head,
+.sidebar .widget ul li a:hover,
+#footer-wrapper .widget ul li a:hover,
+#footer-wrapper a:hover,
+#footer-wrapper .footer-bot-wrapper a.green,
+.sidebar a,
+.sidebar .testimonial.testi-widget .testi-name a,
+.sidebar .widget_calendar caption,
+#footer-wrapper div[id|='calendar'] caption,
+.sidebar .widget_persianart_sidemenu ul li,
+.posts-link a,
+.older-newer a:hover,
+#load-portfolio a:hover,
+#load-portfolio a.active,
+#port-details span.title,
+.author-info h3 a,
+.price-item.active .price-title,
+.posts.shortcode .normal-button:hover {
+	color:#39C2F0;
+}
+
+
+.sf-menu > li:hover > a,
+.sf-menu > li.sfHover > a,
+.sf-menu > li.current-menu-item > a,
+#nivoslider,
+.service-3:hover .icon,
+#load-portfolio a:hover,
+#load-portfolio a.active,
+.portfolio-item-wrapper.default li:hover .portfolio-item-context,
+.portfolio-item-wrapper.style1 li:hover .portfolio-item-context,
+.portfolio-item-wrapper.style2 li:hover .portfolio-item-context {
+	border-color:#39C2F0;
+}
+.tabs li a.active {
+	border-top-color:#39C2F0;
+}
+.sf-menu li ul,
+.roundabout-moveable-item {
+	border-bottom-color:#39C2F0;
+}
+#liteaccordion ol li > div > div {
+	border-left-color:#39C2F0;
+}
+.title .triangle {
+	border-color:transparent transparent #39C2F0 #39C2F0;
+}
+#portfoliosinglepage .featured-thumbnail-wrapper:hover .date-wrapper .triangle,
+.ports li:hover .featured-thumbnail-wrapper .date-wrapper .triangle {
+    border-color:#39C2F0 transparent transparent transparent;
+}
+.portfolio-item-wrapper.style1 li:hover h2 .triangle {
+	border-color:transparent transparent #39C2F0 transparent;
+}
+
+
+#top-nav-wrapper {
+	background-image:url(../../images/skins/skyblue/header-bg.png);
+}
+.sidebar #twitter_update_list li,
+#footer-wrapper #twitter_update_list li {
+	background-image:url(../../images/skins/skyblue/tweet.png);
+}
+.twitter-shortcode .profileLink {
+	background-image:url(../../images/skins/skyblue/twitter-btn.png);
+}
+.sidebar .widget > ul li,
+#footer-wrapper .widget > ul li {
+	background-image:url(../../images/skins/skyblue/star.png);
+}

@@ -1,0 +1,21 @@
+
+/*.body-wrapper {
+	width:1020px;
+	margin:50px auto;
+}
+#menu-wrap,
+#slider-wrapper,
+#slogan-wrapper,
+#slogan,
+#breadcrumb-wrapper {
+	width:940px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#menu-wrap:before,
+#menu-wrap:after {
+	display:block;
+}
+#slogan .slogan-control {
+	left:10px;
+}*/

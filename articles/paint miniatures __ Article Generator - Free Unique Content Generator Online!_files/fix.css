@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+::selection {
+	color:#ffffff;
+	background-color:#63b1be;
+}
+::-moz-selection {
+	color:#ffffff;
+	background-color:#63b1be;
+}
+#liteaccordion ol li > h2 > span.slide_name {
+	-ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.service-2 .icon img {
+	filter:alpha(opacity=70);
+}
+.service-2:hover .icon img {
+	filter:alpha(opacity=100);
+}
+.tabs {
+	zoom:1;
+}
+
+.plag {
+    background-color: #32c752;
+    padding: 12px;
+    color: #fff !important;
+    shadow: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-weight: bold;
+    width: 20%;
+}
