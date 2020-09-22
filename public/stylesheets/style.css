@@ -89,11 +89,7 @@ main {
   margin-top: 5rem;
 }
 
-main > div {
-  padding: 5% 10%;
-}
-
-main > section {
+main > * {
   padding: 5% 10%;
 }
 
@@ -154,7 +150,7 @@ nav ul li:hover {
   flex: 1 0 20%;
 }
 
-header {
+body > header {
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -169,10 +165,10 @@ header {
   border-bottom: 1px solid #D1E0E0;
   font-family: "Exo 2", sans-serif;
 }
-header p {
+body > header p {
   margin: 0;
 }
-header i.header__hamburger-menu {
+body > header i.header__hamburger-menu {
   display: none;
 }
 
