@@ -1,5 +1,13 @@
-<!-- Blog Index Page - Multiple Article Elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
 <body>
+  <!--Example of a Blog Index Page with Multiple Article Elements -->
   <header>
     <h1>Title of Site</h1>
   </header>
@@ -10,36 +18,59 @@
       </header>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         <a href="">Read More.</a></p>
-      </article>
+    </article>
+    <article>
+      <header>
+        <h2>Title of Blog Post</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <a href="">Read More.</a></p>
+    </article>
+    <article>
+      <header>
+        <h2>Title of Blog Post</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <a href="">Read More.</a></p>
+    </article>
+  </main>
+
+<!-- Example: Single-Article Page -->
+    <header>
+      <h2><a href="/">Title of Site</a></h2> <!-- Some people omit the <h2> tags. -->
+    </header>
+    <main>
       <article>
         <header>
-          <h2>Title of Blog Post</h2>
+          <h1>Title of Page or Blog Post</h1>
+          <!-- Post data such as author, publication time, and tags may go here. -->
         </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <a href="">Read More.</a></p>
-        </article>
-        <article>
-          <header>
-            <h2>Title of Blog Post</h2>
-          </header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <a href="">Read More.</a></p>
+        <!-- The article content. -->
+      </article>
+    </main>
+  <!-- Read more: https://html.com/tags/article/#ixzz6YVzawrnT -->
+
+
+  <!-- Example 3: A blog post with comments.
+        source: https://stackoverflow.com/a/26887006 -->
+    <main>
+      <article>
+        <h1>Blog post 2</h1>
+
+        <section>
+          <h2>Comments</h2>
+
+          <article>
+            <p>First!</p>
           </article>
-        </main> </body>
-        <!-- Single-Article Page -->
-        <body>
-          <header>
-            <h2><a href="/">Title of Site</a></h2> <!-- Some people omit the <h2> tags. -->
-            </header>
-            <main>
-              <article>
-                <header>
-                  <h1>Title of Page or Blog Post</h1>
-                  <!-- Post data such as author, publication time, and tags may go here. -->
-                </header>
-                <!-- The article content. -->
-              </article>
-            </main> </body>
 
+          <article>
+            <p>First! <ins>Edit: Second :(</ins></p>
+          </article>
 
-            Read more: https://html.com/tags/article/#ixzz6YVzawrnT
+        </section>
+
+      </article>
+    </main>
+</body>
+</html>
