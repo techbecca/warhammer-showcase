@@ -328,6 +328,12 @@ ul.pagination {
   list-style: none;
 }
 
+.img--primary {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* 6. Page Styles
 (page specific styles, primarily classes)
 ================================================ */

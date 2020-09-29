@@ -213,6 +213,9 @@ ul.pagination {
 
 .img--primary {
 // Should be dominant on the page
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 
 }
 
@@ -281,6 +284,10 @@ section:nth-of-type(2n+2) {
 .logo-small {
   max-height: 25px;
   margin: 0 0.5rem;
+}
+
+.article {
+  // text-align: center;
 }
 
 /* 7. Media queries
