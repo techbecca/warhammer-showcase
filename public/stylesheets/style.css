@@ -16,7 +16,6 @@ Font-sizing idea:
 ======================================== */
 /* 1. Global Styles and Variables
 ================================================ */
-/* Color Theme Swatches in Hex */
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -130,7 +129,7 @@ nav ul li {
   padding: 2rem 1rem;
 }
 nav ul li:hover {
-  color: #BD5442;
+  color: #AA5C47;
 }
 
 /* 4. Module Styles
@@ -162,7 +161,7 @@ body > header {
   background: white;
   height: 5rem;
   padding: 0 10%;
-  border-bottom: 1px solid #D1E0E0;
+  border-bottom: 1px solid #9CA390;
   font-family: "Exo 2", sans-serif;
 }
 body > header p {
@@ -275,7 +274,7 @@ body > header i.header__hamburger-menu {
 table {
   margin: 0 auto;
   text-align: center;
-  background-color: #D1E0E0;
+  background-color: #9CA390;
   border-radius: 10px;
   border-collapse: collapse;
 }
@@ -321,7 +320,7 @@ th, td {
   padding: 2rem 1rem;
 }
 .pagination .active {
-  color: #BD5442;
+  color: #AA5C47;
 }
 
 ul.pagination {
@@ -332,6 +331,10 @@ ul.pagination {
   display: block;
   width: 50%;
   margin: 0 auto;
+}
+
+.text-box {
+  border: 1px solid red;
 }
 
 /* 6. Page Styles
@@ -454,7 +457,7 @@ section:nth-of-type(2n+2) {
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #D1E0E0;
+  border: 1px solid #9CA390;
   box-shadow: 2px 2px 1px #333838;
   border-radius: 10px;
 }

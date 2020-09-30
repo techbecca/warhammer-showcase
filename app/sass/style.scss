@@ -16,14 +16,17 @@ Font-sizing idea:
 ======================================== */
 /* 1. Global Styles and Variables
 ================================================ */
+// 1.a) __________ Fonts ___________
 $font-body: 'Open Sans', sans-serif;
-$font-headings: 'Exo 2', sans-serif; /* Color Theme Swatches in Hex */
-$c-light-shade: #F3F5F4;
-$c-light-accent: #D1E0E0;
-$c-main-brand: #F3BA33;
-$c-dark-accent: #BD5442;
-$c-dark-shade: #333838;
-$c-primary-button: $c-main-brand; //#00A993;
+$font-headings: 'Exo 2', sans-serif;
+// 1.b) __________ Colors ___________
+// Colors from http://colormind.io/bootstrap/
+$snow-drift: #F3F5F4; // light shade: "Use this color as the background for your dark-on-light designs, or the text color of an inverted design."
+$sage: #9CA390; // light accent:"Accent colors can be used to bring attention to design elements by contrasting with the rest of the palette."
+$saffron: #F3BA33; // main brand color:"This color should be eye-catching but not harsh. It can be liberally applied to your layout as its main identity."
+$apple-blossom: #AA5C47; // dark accent: "Another accent color to consider. Not all colors have to be used - sometimes a simple color scheme works best."
+$outer-space: #333838; // dark shade: "Use as the text color for dark-on-light designs, or as the background for inverted designs."
+// 1.c) __________ Other variables ___________
 $header-height: 5rem;
 
 * {
@@ -38,7 +41,7 @@ html {
 body {
   font-weight: 400;
   line-height: 1.45;
-  color: $c-dark-shade;
+  color: $outer-space;
   background-color: white;
 }
 /* 2. Typography Styles
@@ -143,7 +146,7 @@ nav ul {
   }
 
   li:hover {
-    color: $c-dark-accent;
+    color: $apple-blossom;
   }
 
 }
@@ -177,12 +180,9 @@ nav ul {
 (buttons, input, etc.)
 ================================================ */
 
-
-$primary-button-color: $c-primary-button;
-
 .button {
   border-radius: 100px;
-  background-color: $primary-button-color;
+  background-color: $saffron;
   border: none;
   outline: none;
   padding: 12px 40px 10px;
@@ -202,7 +202,7 @@ $primary-button-color: $c-primary-button;
   }
 
   .active {
-    color: $c-dark-accent;
+    color: $apple-blossom;
   }
 
 }
@@ -220,7 +220,7 @@ ul.pagination {
 }
 
 .text-box {
-
+  border: 1px solid red;
 }
 /* 6. Page Styles
 (page specific styles, primarily classes)
@@ -241,7 +241,7 @@ ul.pagination {
 }
 
 section:nth-of-type(2n+2) {
-  background-color: $c-light-shade;
+  background-color: $snow-drift;
 }
 
 /* Article carousel */
@@ -270,8 +270,8 @@ section:nth-of-type(2n+2) {
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid $c-light-accent;
-  box-shadow: 2px 2px 1px $c-dark-shade;
+  border: 1px solid $sage;
+  box-shadow: 2px 2px 1px $outer-space;
   border-radius: 10px;
 }
 
