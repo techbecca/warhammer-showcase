@@ -220,11 +220,24 @@ ul.pagination {
   display: block;
   width: 50%;
   margin: 0 auto;
-
 }
 
 .text-box {
-  border: 1px solid red;
+  border: 2px solid #F3BA33;
+  position: relative;
+  top: 4rem;
+  left: -12rem;
+  padding: 4rem;
+  width: 50vw;
+  margin: 2rem;
+}
+
+.text-box--lower {
+  z-index: -1;
+}
+
+.text-box--higher {
+  z-index: 1
 }
 /* 6. Page Styles
 (page specific styles, primarily classes)
