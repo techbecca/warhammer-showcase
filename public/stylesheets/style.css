@@ -89,7 +89,7 @@ main {
 }
 
 main > * {
-  padding: 5% 10%;
+  padding: 10% 20%;
 }
 
 .contact-form {
@@ -147,6 +147,10 @@ nav ul li:hover {
 }
 .contact-form__div label {
   flex: 1 0 20%;
+}
+
+.article {
+  text-align: justify;
 }
 
 body > header {
