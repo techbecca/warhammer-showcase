@@ -337,22 +337,25 @@ ul.pagination {
   margin: 0 auto;
 }
 
-.text-box {
-  border: 2px solid #F3BA33;
-  position: relative;
-  top: 4rem;
-  left: -12rem;
-  padding: 4rem;
-  width: 50vw;
-  margin: 2rem;
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
-.text-box--lower {
-  z-index: -1;
+.figure__figcaption {
+  padding: 0 4rem;
+  margin-top: 1rem;
 }
 
-.text-box--higher {
-  z-index: 1;
+.figure__img {
+  background-color: white;
+  width: 48vw;
+  padding: 2rem;
+  border: 3px solid #F3BA33;
+  border-radius: 10px;
 }
 
 /* 6. Page Styles
