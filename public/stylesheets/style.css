@@ -352,7 +352,8 @@ ul.pagination {
 
 .figure__img {
   background-color: white;
-  width: 48vw;
+  max-width: 48vw;
+  max-height: 58vh;
   padding: 2rem;
   border: 3px solid #F3BA33;
   border-radius: 10px;
