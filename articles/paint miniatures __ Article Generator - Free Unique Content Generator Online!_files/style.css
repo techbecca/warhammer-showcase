@@ -8055,13 +8055,13 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form {
+#form {
 
 	margin:30px 0 0;
 
 }
 
-#contact-form label {
+#form label {
 
 	display:none;
 
@@ -8073,7 +8073,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form form > div {
+#form form > div {
 
 	max-width:100%;
 
@@ -8095,15 +8095,15 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form .textarea {
+#form .textarea {
 
 	max-width:100%;
 
 }
 
-#contact-form .recaptcha,
+#form .recaptcha,
 
-#contact-form .buttons {
+#form .buttons {
 
 	max-width:none;
 
@@ -8123,7 +8123,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form .recaptcha-error {
+#form .recaptcha-error {
 
 	color:#ffffff;
 
@@ -8135,7 +8135,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form input[type='text'] {
+#form input[type='text'] {
 
 	width:100%;
 
@@ -8151,7 +8151,7 @@ div.wpcf7-response-output {
 
 }
 
- #contact-form select {
+ #form select {
 
 	width:100%;
 
@@ -8169,7 +8169,7 @@ div.wpcf7-response-output {
 
 
 
-#contact-form textarea {
+#form textarea {
 
 	width:100%;
 
@@ -8187,7 +8187,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form .error-message {
+#form .error-message {
 
 	position:absolute;
 
@@ -8207,7 +8207,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form .error-message.php-message {
+#form .error-message.php-message {
 
 	position:static;
 
@@ -8229,7 +8229,7 @@ div.wpcf7-response-output {
 
 }
 
-#contact-form .wait {
+#form .wait {
 
 	width:16px;
 

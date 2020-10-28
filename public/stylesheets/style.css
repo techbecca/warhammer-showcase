@@ -92,9 +92,25 @@ main > * {
   padding: 10% 20%;
 }
 
-.contact-form {
+.form {
   width: 50%;
   margin: 0 auto;
+}
+
+.form__div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+  min-width: 250px;
+}
+.form__div .form__input {
+  flex: 1 0 80%;
+}
+.form__div label {
+  flex: 1 0 20%;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .search-form {
@@ -135,20 +151,6 @@ nav ul li:hover {
 /* 4. Module Styles
 (header, footer)
 ================================================ */
-.contact-form__div {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 5%;
-  min-width: 250px;
-}
-.contact-form__div .form__input {
-  flex: 1 0 80%;
-}
-.contact-form__div label {
-  flex: 1 0 20%;
-}
-
 .blog-post > p {
   text-align: justify;
 }
@@ -298,6 +300,23 @@ thead th, tfoot th {
 
 th, td {
   padding: 10px;
+}
+
+.comment__message {
+  border: 1px solid #9CA390;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.comment__author {
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  margin: 10px;
+  line-height: 2.5;
+}
+
+.comment__date {
+  font-size: 0.825rem;
 }
 
 /* 5. Component Styles
