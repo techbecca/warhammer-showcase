@@ -108,6 +108,7 @@ main > * {
 .form {
   width: 50%;
   margin: 0 auto;
+  min-width: 250px;
 }
 
 .form__div {
@@ -118,13 +119,13 @@ main > * {
   min-width: 250px;
 
   .form__input {
-    flex: 1 0 80%;
+    flex: 1 3 80%;
   }
 
   label {
-    flex: 1 0 20%;
+    flex: 1 0 auto;
     font-weight: bold;
-    margin-right: 10px;
+    padding-right: 5px;
   }
 }
 
